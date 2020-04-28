@@ -45,7 +45,7 @@ Pokud by chtěli příkaz, šlo by to příkazem **ip ssh version 2**
 ```
 Zde již máme ssh aktivní, není nutno ho aktivovat příkazem. Vybereme interface
 a dáme mu ip adresu. **Pozor!! Interface je ve výchozím nastavení routeru vyplý.**
-**Zapneme ho pomocí příkazu no shutdown**
+**Zapneme ho pomocí příkazu no *shutdown* **
 
 ```
 nazev_routeru(config)#interface gigabitEthernet 0/0
