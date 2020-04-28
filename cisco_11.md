@@ -14,7 +14,7 @@ Pro zabezpečení konzole je potřeba:
 - Username a secret
 
 ## Nastavení ssh na ROUTERU
-SSH nastavím následovně (vyzoušeno v packet traceru v. 7.3.0)
+SSH nastavím následovně (vyzkoušeno v packet traceru v. 7.3.0)
 ```
 Router>enable
 Router#configure terminal
@@ -43,4 +43,22 @@ Pokud by chtěli příkaz, šlo by to příkazem **ip ssh version 2**
 *bře 1 0:3:24.979: RSA key size needs to be at least 768 bits for ssh version 2
 *bře 1 0:3:24.980: %SSH-5-ENABLED: SSH 1.5 has been enabled
 ```
-Zde již máme ssh aktivní, není nutno ho aktivovat příkazem.
+Zde již máme ssh aktivní, není nutno ho aktivovat příkazem. Vybereme interface
+a dáme mu ip adresu. **Pozor!! Interface je ve výchozím nastavení routeru vyplý.
+Zapneme ho pomocí příkazu no shutdown**
+
+```
+nazev_routeru(config)#interface gigabitEthernet 0/0
+nazev_routeru(config-if)#ip address 192.168.1.1 255.255.255.0
+nazev_routeru(config-if)#no shutdown
+nazev_routeru(config-if)#exit
+```
+Vrátíme se zpět a povolíme SSH na virtuálních příkazových řádcích. Současně zapínáme ověřování
+proti LOKÁLNÍ databázi routeru.
+
+```
+nazev_routeru(config)#line vty 0 15
+nazev_routeru(config-line)#transport input ssh
+nazev_routeru(config-line)#transport output ssh
+nazev_routeru(config-line)#login local
+```
