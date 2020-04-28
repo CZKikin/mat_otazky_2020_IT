@@ -4,6 +4,7 @@ V této otázce se zabývám zabezpečením přístupu do konzole cisco zaříze
 ## Co je potřeba?
 Pro nastavení ssh je potřeba:
 - Název zařízení
+- secret pro privilegovaný režim
 - Název domény
 - Klíč pro šifrování - RSA
 - IP adresa
@@ -19,6 +20,7 @@ SSH nastavím následovně (vyzkoušeno v packet traceru v. 7.3.0)
 Router>enable
 Router#configure terminal
 Router(config)#hostname nazev_routeru
+Rotuer(config)#enable secret cisco
 nazev_routeru(config)#ip domain-name mojesit
 nazev_routeru(config)#crypto key generate rsa 
 ```
@@ -54,11 +56,25 @@ nazev_routeru(config-if)#no shutdown
 nazev_routeru(config-if)#exit
 ```
 Vrátíme se zpět a povolíme SSH na virtuálních příkazových řádcích. Současně zapínáme ověřování
-proti LOKÁLNÍ databázi routeru.
+proti **lokální** databázi routeru.
 
 ```
 nazev_routeru(config)#line vty 0 15
 nazev_routeru(config-line)#transport input ssh
 nazev_routeru(config-line)#transport output ssh
 nazev_routeru(config-line)#login local
+```
+## Nastavení přihlašování na konzolovém rozhraní
+Jelikož username a secret již máme, stačí jen zapnout přihlašování na konzolovém
+rozhraní.
+```
+nazev_routeru(config)#line console 0
+nazev_routeru(config-line)# login local
+```
+
+## Nastavení MOTD a login message
+Nastavení zprávy systému
+```
+nazev_routeru(config)#banner motd %Toto je majetek moje_firma_sro. Pokud nejste opravneni ke sprave tohoto zarizeni, kontaktujte vaseho nadrizeneho%
+nazev_routeru(config-line)# banner login %Jakakoli aktivita je logovana%
 ```
