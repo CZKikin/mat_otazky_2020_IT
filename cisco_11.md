@@ -36,10 +36,11 @@ How many bits in the modulus [512]: 512
 ```
 nazev_routeru(config)#username cisco secret cisco
 ```
-Může se stát, že u maturity po vás budou chtít SSHv2!! -  Pokud jde o packet tracer
+Pozn.: Může se stát, že u maturity po vás budou chtít SSHv2!! -  Pokud jde o packet tracer
 zde to nejde. Tento router totiž má maximální velikost klíče 512, ale SSHv2 potřebuje alespoň 768.
 Pokud by chtěli příkaz, šlo by to příkazem **ip ssh version 2**
 ```
 *bře 1 0:3:24.979: RSA key size needs to be at least 768 bits for ssh version 2
 *bře 1 0:3:24.980: %SSH-5-ENABLED: SSH 1.5 has been enabled
 ```
+Zde již máme ssh aktivní, není nutno ho aktivovat příkazem.
