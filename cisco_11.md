@@ -44,8 +44,8 @@ Pokud by chtěli příkaz, šlo by to příkazem **ip ssh version 2**
 *bře 1 0:3:24.980: %SSH-5-ENABLED: SSH 1.5 has been enabled
 ```
 Zde již máme ssh aktivní, není nutno ho aktivovat příkazem. Vybereme interface
-a dáme mu ip adresu. **Pozor!! Interface je ve výchozím nastavení routeru vyplý.
-Zapneme ho pomocí příkazu no shutdown**
+a dáme mu ip adresu. **Pozor!! Interface je ve výchozím nastavení routeru vyplý.**
+**Zapneme ho pomocí příkazu no shutdown**
 
 ```
 nazev_routeru(config)#interface gigabitEthernet 0/0
