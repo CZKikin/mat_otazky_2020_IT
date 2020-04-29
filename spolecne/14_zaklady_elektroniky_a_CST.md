@@ -180,3 +180,27 @@ informace reprezentována a zpracovávána v podobě diskrétní
 - multiplexery a demultiplexery
 - komparátory
 - obvody pro aritmetické operace (sčítačky, generátory přenosu apod.
+
+## Přehled kódů používaných v čislovobé technice
+** Nemůžu najít informace -> Grayův kód **
+
+## Pull-up/pull-down na vstupech čislicových obvodů
+Co se ale stane v případě, že na vstup není přivedeno žádné napětí?
+
+V praxi často vstupní logické obvody obsahují tzv. pull-up a pull-down rezistory. Ty nám určují, 
+zda v takovém případě bude tato situace vyhodnocena tak, jako by byla hodnota přivedeného 
+signálu logická 1 (pull-up) nebo logická 0 (pull-down). Pull-up znamená, 
+že je na vstupu zapojen odpor určité hodnoty připojen mezi vstup a kladné napájecí napětí, 
+pull-down naopak značí připojení odporu k logické zemi (nejčastěji 0 V). V závislosti 
+na typu integrovaného obvodu lze tyto odpory nastavovat programově.
+
+## Připojení LED
+Za úplně nejzákladnější znalost považuji zapojení LED diod a tlačítek. 
+Na následujícím obrázku můžete vidět, že nejběžnější zapojení LED diody 
+je přivedení anody na +5V a katody na výstup přes rezistor. Hodnota tohoto rezistoru 
+se vypočítá dle vzorce na obrázku. Odpor [Ohm] je roven celkovému napětí 
+(5V) [V] mínus napětí na diodě [V] lomeno proudem [A]. Zde bych rád upozornil, 
+že ne vždy je hodnota odporu určená výpočtem vyhovující. Pokud potřebujete, aby dioda svítila méně, 
+stačí použít odpor s vyšší hodnotou. To nejčastěji využijete u bílé a možná modré LED diody, 
+jejichž svítivost je skutečně vysoká. Pokud neznáte parametry diody, kterou máte zrovna po ruce, 
+nemělo by vadit ani použití nějakého odporu v rozmezí +/- 330R až 1k5 a u bílé klidně i 10k.
