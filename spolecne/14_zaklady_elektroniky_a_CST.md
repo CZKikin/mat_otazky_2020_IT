@@ -61,3 +61,37 @@ mezi dvěma body elektrického pole.
 Jednotkou elektrického potenciálu a elektrického napětí je volt (V). 
 Je to napětí mezi konci vodiče, do něhož stálý proud 1 ampéru 
 dodává výkon 1 wattu.
+
+## Elektrická práce a výkon elektrického proudu
+Nejčastějším případem konání elektrické práce je působení elektrického pole 
+zdroje o napětí U na částice s elektrickým nábojem ve vodiči, 
+které způsobí pohyb částic – elektrický proud I po dobu t.
+
+```
+W = U*I*t
+```
+
+Elektrický výkon je fyzikální veličina, která vyjadřuje vykonanou elektrickou práci za jednotku času. 
+Značí se písmenem P a jeho jednotkou je watt, značený písmenem W. 
+Elektrický výkon je druhem výkonu, u kterého práci koná elektrická síla
+
+```
+P = U*I => W=P*t (Ws, kWh)
+```
+
+Účinnost je fyzikální veličina, která udává poměr mezi výkonem a příkonem stroje při vykonávání práce.
+
+Energie dodaná stroji musí být vždy větší než práce strojem vykonaná z důvodu ztrát - přeměně energie na 
+neužitečné druhy (např. v důsledku tření se mění mechanická energie v teplo). 
+Proto účinnost je vždy menší než 100 %.
+
+```
+η = P/P˘p
+```
+
+## Sériové a Paralelní zapojení resistorů 
+### Sériové zapojení
+![Seriové zapojení](images/serie.png)
+
+### Paralelní zapojení
+![Paralelní zapojení](images/paralel.png)
