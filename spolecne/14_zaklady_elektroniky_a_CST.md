@@ -95,3 +95,5 @@ Proto účinnost je vždy menší než 100 %.
 
 ### Paralelní zapojení
 ![Paralelní zapojení](images/paralel.png)
+
+## Zdroje napětí
