@@ -2,15 +2,15 @@
 
 ## Charakteristika a parametry procesorů IBM-PC kompatibilní
 
-### i
+### i286
 
 1982, A-Bus -24b, D-Bus – 16b, Frekvence – 6 – 25Mhz, První setup BIOS
 
-### i
+### i386
 
 1983, A-Bus 32b, D-Bus 32b, Frekvence 16-40 Mhz, 1. Multitasking, 1. Použítí cahce na zákl. Desce
 
-### i
+### i486
 
 Prakticky i80386, ale s FPU
 
@@ -20,7 +20,7 @@ Prakticky i80386, ale s FPU
 
 Má dvě větve ALU – výkon má tedy 2x větší, ale na stejné frekvenci
 
-### AMD K
+### AMD K5
 
 1997 Během 1. taktu dvě instrukce, dynamické přepínání skoku, Pipelining – Postupně se instrukce
 zpracovává více jednotkami
