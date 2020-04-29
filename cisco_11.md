@@ -48,6 +48,8 @@ Pokud by chtěli příkaz, šlo by to příkazem **ip ssh version 2**
 Zde již máme ssh aktivní, není nutno ho aktivovat příkazem. Vybereme interface
 a dáme mu ip adresu. **Pozor!! Interface je ve výchozím nastavení routeru vyplý.**
 **Zapneme ho pomocí příkazu** ***no shutdown***
+Pokud nastavujeme ssh na switch, který pracuje jen na druhé vrstvě modelu ISO/OSI, musíme 
+ip adresu nastavit na rozhraní vlan (virtual lan). Porty takového switche nemůžou mít ip adresu.
 
 ```
 nazev_routeru(config)#interface gigabitEthernet 0/0
