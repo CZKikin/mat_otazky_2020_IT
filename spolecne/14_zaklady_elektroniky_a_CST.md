@@ -162,3 +162,21 @@ VDD     (kladné napájecí napětí; Drain)
 VSS     (GND nebo záporné napájecí napětí; Source)
 
 ```
+
+## Logické hodnoty
+Logický, číslicový či digitální obvod je elektronický obvod, 
+který pracuje s diskrétními stavy. Jsou tvořeny tzv. logickými členy 
+(nazývanými též hradla). Naopak z logických obvodů se skládají 
+číslicové systémy.
+
+Na rozdíl od analogových elektronických obvodů, 
+které jsou založené na spojité formě informace 
+(mechanické ručičkové hodiny), v logických obvodech je 
+informace reprezentována a zpracovávána v podobě diskrétní 
+(digitální hodiny).
+
+## Typické kombinační obvody 
+- dekodéry
+- multiplexery a demultiplexery
+- komparátory
+- obvody pro aritmetické operace (sčítačky, generátory přenosu apod.
