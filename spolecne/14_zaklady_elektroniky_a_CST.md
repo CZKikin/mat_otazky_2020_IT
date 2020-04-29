@@ -140,3 +140,11 @@ Matematický zápis: Y = /A
 ### YES (repeater)
 Opakovač – na výstupu je vždy stejná logická hodnota jako na vstupu.
 Matematický zápis: Y = A
+
+## Logické úrovně
+
+Boolean -> True a False
+Mezi těmito stavy, je zakázané pásmo (Zamezuje špatné registraci hodnoty)
+![Logické úrovně](images/logicke.jpg)
+
+
