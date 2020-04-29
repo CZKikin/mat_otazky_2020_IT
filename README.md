@@ -1,5 +1,5 @@
-# mat_otazky_2020_IT
+# Maturitní otázky pro IT v roce 2020
 
-Čuvaj, hen sem budu jebat otázečky k maturitce :)
+Ano, jste povoleni otázky upravovat, pak pošlete pull req.
 
 *ALL HEIL IT4*
