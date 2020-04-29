@@ -1,8 +1,8 @@
-# 4. Periferní zařízení PC............................................................................................................................
+# 4. Periferní zařízení PC
 
-## Standartní periferní zařízeními............................................................................................................
+## Standartní periferní zařízeními
 
-### Klávesnice.......................................................................................................................................
+### Klávesnice
 
 Periferní zařízení, které uživateli dovolí vkládat znaky do počítače. Jejich layout je převzaný z psacího
 stroje, avšak existují i efektivnější, jako je třeba DVORAK. Layout QWERTY vznikl kvůli zasekávání
@@ -10,15 +10,15 @@ nožiček psacího stoje, ale to již nehrozí. Klávesnice měli spoustu konekt
 Moderní klávesnice dělíme na membránové a mechanické. Mechanické mají výhodu hlavně v odezvě.
 Další pro někoho příjemná věc je zvuk a příjemné psaní na klávesnici.
 
-### Myš.................................................................................................................................................
+### Myš
 
 Myš je periferní zařízení jenž pohybuje kursorem v grafickém prostředí. Bývá připojeno USB, či PS/2.
 
-### Monitory.........................................................................................................................................
+### Monitory
 
 Monitory zobrazují výstup z PC. Dělíme je na CRT a LCD.
 
-#### CRT............................................................................................................................................
+#### CRT
 
 Obrazovka (anglicky cathode ray tube, zkratka CRT) je v češtině označení pro speciální elektronku
 (katodovou trubici), která na přední části (tj. na stínítku) vytváří obraz pomocí proudu elektronů. Uvnitř
@@ -27,7 +27,7 @@ elektronů vytváří viditelné světlo (zářící body). Od začátku 21. sto
 vytlačována plochými monitory používajících LCD, OLED a plazmové obrazovky.
 
 
-#### LED............................................................................................................................................
+#### LED
 
 **LED obrazovka** je aktivní zobrazovací zařízení, kde hlavním aktivním prvkem jsou světelné diody,
 takzvané **LED** (Light Emitting Diode), které pokrývají celou plochu obrazovky.
@@ -38,9 +38,9 @@ z určité vzdálenosti barevný svit všech tří LED splyne díky omezené roz
 oka a pozorovatel ho vnímá jako jeden barevný bod. Čím větší je rozteč mezi jednotlivými LED, tím
 větší je i minimální pozorovací vzdálenost.
 
-### Tiskárny a princip tisku..................................................................................................................
+### Tiskárny a princip tisku
 
-#### Jehličková..................................................................................................................................
+#### Jehličková
 
 Pomalá, hlučná tiskárna která tiskne přes inkoustový papírek. Velmi jednoduchá na údržbu a podporuje
 kopírovací papír. Využití na úřadech
@@ -53,7 +53,7 @@ zájmu a používají se v zařízeních, jako jsou pokladny, terminály, a tam,
 průklepem. Rychlost tisku činí až 1000 znaků za sekundu. Tisk grafiky je možný pouze v nízkém
 rozlišení, s omezenou paletou barev a nízkou rychlostí.
 
-#### Inkoustová..................................................................................................................................
+#### Inkoustová
 
 Drahý inkoust, musí se dávat pozor aby nezaschla hlava. Mnohem kvalitnější a rychlejší tisk než
 jehličková. Spojení levného s rychlím a uspokojivým.
@@ -69,7 +69,7 @@ purpurová, žlutá, černá). Fototiskárny používají navíc další inkoust
 azurové a purpurové.
 
 
-#### Laserová.....................................................................................................................................
+#### Laserová
 
 Tisk za pomocí toneru. Velmi kvalitní tisk a velmi rychlý. Tonery a samotné tiskárny jsou však dražší.
 
@@ -91,13 +91,13 @@ exponovaných místech Obraz je přenesen na papír. Přenosu napomáhá záporn
 válec), přiložená k zadní straně papíru Obraz vytvořený práškovým barvivem je “ustálen” horkým
 přítlačným válcem nebo ohřevem IR zářením.
 
-### Scanner...........................................................................................................................................
+### Scanner
 
 Zařízení jenž převádí 2D, či 3D do digitálu.
 
-## Rozhraní pro připojení periferních zařízení........................................................................................
+## Rozhraní pro připojení periferních zařízení
 
-### PS/2.................................................................................................................................................
+### PS/2
 
 je označení šestikolíkových konektorů mini-DIN, jimiž se k počítači (zpravidla zezadu) připojuje
 klávesnice a polohovací zařízení (myš, trackball apod.) nebo jiné speciální periferie (např. čtečka
@@ -107,7 +107,7 @@ Postupem času se tento konektor stal de-facto standardem pro připojení kláve
 elektricky kompatibilní konektor DIN, a polohovacích zařízení, kde soupeřil s jinými rozhraními (např.
 sériovým portem).
 
-### Sériový port RS-232.......................................................................................................................
+### Sériový port RS-232
 
 Standard RS-232, resp. jeho poslední varianta RS-232C z roku 1969, (také sériový port nebo sériová
 linka) se používá jako komunikační rozhraní osobních počítačů a další elektroniky. RS-232 umožňuje
@@ -128,27 +128,27 @@ dobu odezvy, což může v některých aplikacích způsobovat značné problém
 moderní základní desky většinou nemají sériový port na zadním panelu, mohou ho některé mít vyveden
 na 10-pinový konektor na jiném místě na desce (podobně jako „interní“ USB).
 
-### Universal Serial Bus.......................................................................................................................
+### Universal Serial Bus
 
 Plug and play, napájení
 
 několik generací
 
-#### USB 1.0......................................................................................................................................
+#### USB 1.0
 
 Ve verzi USB 1.1 existují pomalá (Low-Speed) zařízení s přenosovou rychlostí 1,5 Mbit/s (187,5 kB/s)
 a rychlá zařízení (Full-Speed) s rychlostí 12 Mbit/s (1,5 MB/s). USB 1.1 však nebylo schopno
 konkurovat vysokorychlostním rozhraním, např. FireWire (IEEE 1394) od firmy Apple (400 Mbit/s; až
 63 zařízení).
 
-#### USB 2.0......................................................................................................................................
+#### USB 2.0
 
 V roce 1999 se začalo uvažovat o druhé generaci USB, která by byla použitelná i pro náročnější
 zařízení (např. digitální kamery). Tato nová verze, označovaná jako USB 2.0, přišla v roce 2000 a
 nabídla maximální rychlost 480 Mbit/s (60 MB/s) v režimu Hi-Speed, avšak zachovala zpětnou
 kompatibilitu s USB 1.1 (režimy Low-Speed a Full-Speed).
 
-#### USB 3.0......................................................................................................................................
+#### USB 3.0
 
 Třetí verze (označovaná také jako Superspeed USB) byla hotová již 17. listopadu 2008, ale
 pravděpodobně kvůli finanční krizi se její masové rozšíření opozdilo a rozvíjet se začíná až roku 2010.
@@ -158,12 +158,12 @@ technologie má 9 vodičů namísto původních 4 (datové vodiče jsou již 4),
 libovolnou kombinaci zařízení a portů USB 2.0 a USB 3.1.
 
 
-#### USB 3.1 gen2.............................................................................................................................
+#### USB 3.1 gen2
 
 Verze 3.1, též pod názvem USB SuperSpeed+ 3.1, byla představena 31. července 2013. Hlavní
 avizovanou vlastností byla zpětná kompatibilita a plánovaná rychlost 10 Gb/s.
 
-#### USB-C........................................................................................................................................
+#### USB-C
 
 3. prosince 2013 byl znám konkrétní návrh standardu a konektoru (nazývaného typ C). Ten se má
 rozměry blížit variantě microUSB, svými vlastnostmi konektoru Lightning od Applu. Stejně jako ten
@@ -178,7 +178,7 @@ USB-C používáno téměř ve všech zařízeních.
 Příklady využití: nabíjení zařízení, jako datový kabel, pro připojení k internetu, k přenosu obrazu (jako
 je DisplayPort, MHL či HDMI).
 
-### Firewire...........................................................................................................................................
+### Firewire
 
 FireWire (označované jako i.Link nebo IEEE 1394) je standardní sériová sběrnice pro připojení
 periférií k počítači. Díky své technické jednoduchosti a pořizovací ceně nahrazuje dříve používané
@@ -193,9 +193,9 @@ videokamer, v profesionální sféře se používá k rychlému připojení exte
 mechanik, čteček paměťových karet atd.
 
 
-## Disková rozhraní.................................................................................................................................
+## Disková rozhraní
 
-### ATA.................................................................................................................................................
+### ATA
 
 Advanced Technology Attachment (ATA, IDE, PATA) je v informatice název sběrnice, která byla
 určena pro připojování zařízení k uchovávání dat (pevný disk, optická mechanika). Vytvořena byla v
@@ -203,18 +203,18 @@ roce 1986 firmou Western Digital. Když byl v roce 2000 uveden nový standard Se
 kvůli odlišení pro ATA sběrnici používáno označení Parallel ATA (PATA). Zařízení používající standard
 ATA pak přestala být postupně vyráběna a dnes jím už nejsou základní desky počítačů ani osazovány.
 
-#### ATAPI 7 (ATA/133)...................................................................................................................
+#### ATAPI 7 (ATA/133)
 
 - přenosový režim UDMA 6 (133 MB/s)
 - definice SATA
 Podpora ATA 150 není normalizována.
 
-### SATA...............................................................................................................................................
+### SATA
 
 SATA označuje v informatice počítačovou sběrnici, která využívá datové rozhraní pro připojení
 velkokapacitních paměťových zařízení, jako jsou pevné a optické disky. V dnešní době je SATA
-řadičem vybavena většina[ stolních a přenosných počítačů.
+řadičem vybavena většina stolních a přenosných počítačů.
 
-## Zobrazovací soustavy..........................................................................................................................
+## Zobrazovací soustavy
 
 CMYK, RGB

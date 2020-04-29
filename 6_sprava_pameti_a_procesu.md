@@ -1,6 +1,6 @@
-# 6. Správa procesů a paměti.......................................................................................................................
+# 6. Správa procesů a paměti
 
-## Typologie OS.......................................................................................................................................
+## Typologie OS
 
 Víceuživatelské, síťové atd.
 
@@ -9,7 +9,7 @@ CPU, PC OS, PS, Handheld OS, mobily, embeddes Os, OS embedded zarizeni, Sensor n
 senzorovejch sítí, Realtime OS, smartcard OS
 
 
-## Evidence procesů.................................................................................................................................
+## Evidence procesů
 
 Proces má více stavů:
 
@@ -43,7 +43,7 @@ vyzvednutí výsledku činnosti tohoto svého potomka,
 
 intervalu nebo nějakou událost.
 
-## Správa procesů....................................................................................................................................
+## Správa procesů
 
 Kontext procesu je souhrn břehových informací o procesu. Při různých typech multitaskingu zde
 řadíme různé informace, obvykle jsou součástí kontextu tato data:
@@ -72,7 +72,7 @@ PCB (tedy tabulky procesu) nebo do paměťového prostoru příslušného proces
 Při přepínání kontextu se uloží kontext původně běžícího procesu a obnoví kontext následujícího
 procesu.
 
-## Správa paměti......................................................................................................................................
+## Správa paměti
 
 Modul správce paměti je v operačních systémech většinou součástí jádra. Jeho implementace může být
 různá, ale funkce jsou obvykle podobné:
@@ -89,13 +89,13 @@ paměti, tedy nedovolí procesu přístup do paměťového prostoru jiného proc
 paměťového prostoru operačního systému.
 
 
-## Réalné metody přidělování paměti......................................................................................................
+## Réalné metody přidělování paměti
 
 Zde probereme metody používané v případě, že logický adresový prostor nepřekračuje fyzický, tedy
 fyzická vnitřní pamět’ dostačuje potřebám procesů, a možnosti řešení problémů vznikajících při
 používání těchto metod.
 
-## Přidělení jedné souvislé oblasti paměti...............................................................................................
+## Přidělení jedné souvislé oblasti paměti
 
 Tato jednoduchá metoda spočívá v přidělení veškerého adresového prostoru procesu kromě oblasti
 operačního systému. Pamět’ je rozdělena na tři části: pamět’ vyhrazenou pro operační systém, pamět’
@@ -122,7 +122,7 @@ princip zásobníku. Tuto metodu používaly operační systémy, které nebyly 
 M), případně ji můžeme použít při programování složitější aplikace, kde chceme rozdělit vlastní
 adresový prostor (třeba mezi více vláken).
 
-## Virtuální paměť...................................................................................................................................
+## Virtuální paměť
 
 Virtuální pamět’ je koncept, kdy oblast vnitřní paměti rozšíříme o oblast na vnějším pamět’ovém
 médiu, obvykle pevném disku. Pro procesy je tento koncept naprosto transparentní (naprosto stejným
@@ -133,9 +133,9 @@ přidělování paměti, nemožnosti spustit proces, jehož požadavky na pamět
 momentálně volné (fyzické) operační paměti. Existuje více metod pro práci s virtuální pamětí, obvykle
 vycházejí z reálné metody stránkování (případně v kombinaci s jinou metodou).
 
-## Segmentace..........................................................................................................................................
+## Segmentace
 
-Každému procesu je přiřazeno několik (různě dlouh **ý** ch) bloků paměti, segmentů. Pokud je to potřeba a
+Každému procesu je přiřazeno několik (různě dlouhých) bloků paměti, segmentů. Pokud je to potřeba a
 je v daném směru volná oblast paměti, segmenty lze prodlužovat. Každý segment obvykle mívá určitý
 účel, například segment pro kód procesu (code segment), datový segment (data segment, pro globální
 konstanty a proměnné), zásobníkový segment (stack segment, obsazuje se od nejvyšších adres k
@@ -148,7 +148,7 @@ fragmentace. Pokud má segment proměnnou délku (např. zásobník), umíst’u
 případném přetečení (posunu hranice až tam, kde nemá co dělat) narušil spíše pamět’ový prostor
 vlastního procesu než pamět’ový prostor cizího procesu (tj. měl by růst směrem k ostatním segmentům
 daného procesu). Procesy, které jsou instancemi téhož programu, mohou sdílet plně konstantní
-segmenty (pokud to systém umožňuje). Segment je tedy pamět’ový blok určený pro jeden konkrétní ✎
+segmenty (pokud to systém umožňuje). Segment je tedy pamět’ový blok určený pro jeden konkrétní
 účel, jehož délka je danému účelu přizpůsobena. Procesy používají relativní adresy, adresy začátku
 jednotlivých segmentů jsou uloženy v segmentových registrech procesoru (tedy je to opět hardwarově
 závislé řešení, každý procesor má jiné adresové/segmentové registry). Absolutní adresa je pak
@@ -178,7 +178,7 @@ paměti,
 - určitá pravděpodobnost fragmentace, ta se ale dá řešit přesouváním segmentů.
 
 
-## Defragmentace.....................................................................................................................................
+## Defragmentace
 
 Fragmentace na vnějším pamět’ovém médiu vzniká tehdy, když smažeme jeden soubor, do takto
 uvolněného místa je uložen nový soubor, ten se rozhodneme prodloužit a on se po tomto prodloužení
@@ -206,7 +206,7 @@ pouze volíme vhodnou metodu výběru bloku paměti, řešíme fragmentaci jen �
 výhodou těchto metod je, na rozdíl od následujícího řešení, že adresový prostor procesu se po celou
 dobu jeho běhu nemění.
 
-## Stránkování..........................................................................................................................................
+## Stránkování
 
 Metoda stránkování rozlišuje fyzickou adresu objektu v paměti (to je absolutní adresa objektu) a
 logickou adresu tohoto objektu (s tou pracují procesy). Pamět’ový prostor je rozdělen na stejně dlouhé
@@ -243,7 +243,7 @@ virtuální pamět’ a (obvykle) spojení se segmentací běžně používána 
 systémech
 
 
-## RING 0-3.............................................................................................................................................
+## RING 0-3
 
 Moderní operační systémy využívají hardwarovou ochranu prostředků. Na procesorech rodiny x86 je
 tato ochrana implementována ve formě čtyř okruhů – Ring 0, Ring 1, Ring 2 a Ring 3. Každý proces
@@ -256,7 +256,7 @@ obvykle barevně odlišeny (v barvách podle obrázku 2.8). Z výše uvedeného 
 2 obvykle nejsou používány. Přesto je lze využít pro další rozškálování přístupových oprávnění a
 například s Ring 1 se setkáme u některých virtualizačních technik, zejména na serverech.
 
-## Swapování...........................................................................................................................................
+## Swapování
 
 Swapování procesů je jednoduchá metoda virtualizace, která spočívá v tom, že se neodkládají
 jednotlivé stránky paměti, ale vždy celý pamět’ový prostor odkládaného procesu. Pamět’ vlastně ani

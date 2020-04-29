@@ -1,6 +1,6 @@
-# 2. Procesory pro PC...................................................................................................................................
+# 2. Procesory pro PC
 
-## Charakteristika a parametry procesorů IBM-PC kompatibilní..............................................................
+## Charakteristika a parametry procesorů IBM-PC kompatibilní
 
 ### i
 
@@ -14,7 +14,7 @@
 
 Prakticky i80386, ale s FPU
 
-### Intel Pentium.....................................................................................................................................
+### Intel Pentium
 
 1991, D-Bus – 64b, A-Bus – 32b, Frekvence 60 – 200Mhz + 16 KiB
 
@@ -25,30 +25,30 @@ Má dvě větve ALU – výkon má tedy 2x větší, ale na stejné frekvenci
 1997 Během 1. taktu dvě instrukce, dynamické přepínání skoku, Pipelining – Postupně se instrukce
 zpracovává více jednotkami
 
-### Pentium 2..........................................................................................................................................
+### Pentium 2
 
 1997, PAE – Page address extension, f = 233 – 500 Mhz, A – Bus = 32 b +4 PAE, D-Bus = 64b
 
 Cache již v pouzdru CPU L1 i L2, L1 u jádra (stejná frekvence), L2 mimo (½ frekvence)
 
-### Pentium 3..........................................................................................................................................
+### Pentium 3
 
 1999, f = až 1.4 Ghz, D – bus = 64b, A -bus = 32 + 4
 
-### Pentium 4..........................................................................................................................................
+### Pentium 4
 
 2001, HyperThreading – rychlé přepínání mezi dvěmi sadami registrů, frekvence až 3.6GHz,
 
 d-bus - 64b, a-bus – 32 +4 b
 
-### Intel CORE.......................................................................................................................................
+### Intel CORE
 
 2006+, D-bus i A - bus 64b, frekvence až 4-5 GHz
 
 
-## Paměťový prostor, cache, módy činnosti..............................................................................................
+## Paměťový prostor, cache, módy činnosti
 
-### Paměťový prostor.............................................................................................................................
+### Paměťový prostor
 
 Dělí se na paměť uživatelskou, paměť systémovou, a paměť dat. Do uživatelské paměti se ukládá
 uživatelský program. Tato paměť bývá typu EPROM nebo EEPROM a mívá kapacitu řádově od
@@ -60,7 +60,7 @@ a většinou i vyrovnávací registry pro obrazy vstupů a výstupů. Počet tě
 možnosti programovatelného automatu. Adresovatelný prostor vymezený pro vstupy/výstupy omezuje
 počet připojitelných periferních jednotek. Důležitým parametrem jsou i rozsahy čítačů a časovačů.
 
-### Cache................................................................................................................................................
+### Cache
 
 Cache (též mezipaměť) je v informatice označení pro hardwarovou nebo softwarovou součást počítače,
 která uchovává data a tím následující přístup k těmto datům může být rychlejší. Od vyrovnávací paměti
@@ -74,17 +74,17 @@ vyššího výkonu zařízení (počítače). Hardwarovou cache najdeme v mikrop
 discích. Cache může být softwarově vytvořena v operační paměti.
 
 
-### Módy činnosti...................................................................................................................................
+### Módy činnosti
 
-#### Chráněný......................................................................................................................................
+#### Chráněný
 
-##### Ochrana paměti.......................................................................................................................
+##### Ochrana paměti
 
 Chráněný režim přináší podporu ochrany paměti, která umožňuje přidělit běžícímu procesu určitý úsek
 operační paměti a znemožnit, aby mohl zasahovat mimo tento vymezený prostor. Umožňuje tím zavést
 multitasking (v paměti může být najednou více procesů).
 
-##### Privilegovaný režim................................................................................................................
+##### Privilegovaný režim
 
 Privilegovaný režim umožňuje zajistit, aby neprivilegované procesy nemohly měnit nastavení, která
 byla provedena v privilegovaném režimu. Jádro operačního systému běží v privilegovaném režimu a
@@ -92,18 +92,18 @@ všechny ostatní procesy v neprivilegovaném. Tak jádro neztratí nad počíta
 může procesům přidělovat a odebírat systémové prostředky, ukončovat je, vynucovat změnu kontextu,
 rozhodovat o dostatečném oprávnění k provedení určité činnosti atd.
 
-##### Virtualizace paměti..................................................................................................................
+##### Virtualizace paměti
 
 Dále chráněný režim přináší pokročilou správu operační paměti, která spočívá v podpoře virtuální
 paměti pomocí stránkování, což usnadňuje provozování multitaskingu.
 
-##### Virtualizace systému...............................................................................................................
+##### Virtualizace systému
 
 Chráněný režim přináší také možnost virtualizace, takže uvnitř jednoho systému (hypervizor) lze
 provozovat jiný systém (virtualizovaný), který bude mít dojem, že má počítač jen pro sebe (je však pod
 kontrolou hypervizoru).
 
-##### Zpětná kompatibilita...............................................................................................................
+##### Zpětná kompatibilita
 
 Procesory podporující chráněný režim zachovávají kvůli zpětné kompatibilitě i podporu staršího
 reálného režimu. To umožnilo používat již existujícího software (jak aplikační software, tak i operační
@@ -113,7 +113,7 @@ Procesory rodiny x86 se dodnes z důvodu zpětné kompatibility spouštějí nej
 chráněného režimu musí být teprve přepnuty, což moderní operační systémy (Microsoft Windows,
 Linux, macOS, ...) dělají při bootování hned po aktivaci jádra.
 
-#### Reálný..........................................................................................................................................
+#### Reálný
 
 Reálný mód neboli režim reálných adres (anglicky real mode, real address mode) je v informatice
 základní režim mikroprocesorů z rodiny x86. Rozlišuje se až od řady Intel 80286, kdy byl uveden
@@ -127,7 +127,7 @@ Typickými vlastnostmi režimu reálných adres je segmentace paměti s 20bitovo
 nanejvýš 1 MiB přímo adresovatelné paměti) a neomezený přímý přístup do celé paměti i ke všem
 perifériím. Nelze tedy zajistit spolehlivé fungování multitaskingu.
 
-##### Adresace..................................................................................................................................
+##### Adresace
 
 Adresa je v režimu reálných adres určena dvěma registry: segmentovým a offsetovým. Fyzická adresa
 je vypočítána jako součet hodnoty v segmentovém registru vynásobené 16 (tedy posunuté o 4 bity
@@ -142,7 +142,7 @@ bylo toto chování emulováno softwarově. Adresy nad hranicí 1 MiB (přesněj
 KiB – 16 bajtů, tj. do adresy 1114095) byly označovány jako HMA (high memory area) a bylo do nich
 možné umístit například část systému DOS a uvolnit tak místo v konvenční paměti.
 
-##### Přepínání do reálného režimu..................................................................................................
+##### Přepínání do reálného režimu
 
 Záměrem firmy Intel při zavádění režimu chráněné virtuální paměti bylo, aby v tomto režimu v
 budoucnu běžely všechny operační systémy i jejich programy. Tomu odpovídala i podpora přepínání
@@ -156,9 +156,9 @@ používání zcela upustilo. Řešením bylo používat ono resetování proces
 nezvyklou a časově náročnou operaci. Při resetování samotného procesoru totiž nedochází ke smazání
 paměti a při správném ošetření tedy může operační systém přepnout tam i zpět bez následků.
 
-## Přerušení, přímý přístup do paměti.......................................................................................................
+## Přerušení, přímý přístup do paměti
 
-### Přerušení...........................................................................................................................................
+### Přerušení
 
 Přerušení (anglicky interrupt) je v informatice metoda pro asynchronní obsluhu událostí, kdy procesor
 přeruší vykonávání sledu instrukcí, vykoná obsluhu přerušení, a pak pokračuje v předchozí činnosti.
@@ -172,7 +172,7 @@ vyvolávaná speciální strojovou instrukcí, která se obvykle používají pr
 systému.
 
 
-### DMA – Přímý přítup do paměti.....................................................................................................
+### DMA – Přímý přítup do paměti
 
 DMA (anglicky Direct Memory Access, tj. přímý přístup do paměti) je v informatice způsob přímého
 přenosu dat mezi operační pamětí a vstupně/výstupními zařízeními. Data neprocházejí skrze procesor a
@@ -181,7 +181,7 @@ instrukce). DMA se používá pro přenos větších objemů dat například řa
 karta, síťová karta, zvuková karta a podobně. DMA je odchylkou od Von Neumannovy architektury
 počítače.
 
-#### Princip........................................................................................................................................
+#### Princip
 
 Klasická komunikace se vstupně-výstupními zařízeními je realizována pomocí strojových instrukcí IN
 (přenáší data ze zařízení do registru procesoru) a OUT (přenáší data z registru procesoru do zařízení),
@@ -199,9 +199,9 @@ a může vykonávat jinou činnost. Počítač tak má z hlediska uživatele vě
 přenosu může být signalizováno přerušením, které aktivuje obsluhu přerušení, která může
 naprogramovat řadič DMA na další přenosy.
 
-## Zpracování instrukcí...........................................................................................................................
+## Zpracování instrukcí
 
-### Jednoduché.....................................................................................................................................
+### Jednoduché
 
 Jedná se o následující stupně:
 
@@ -211,7 +211,7 @@ Jedná se o následující stupně:
 4.Access – čtení z paměti
 5.Writeback – zápis výsledku do paměti
 
-### Zřetězené.........................................................................................................................................
+### Zřetězené
 
 Pipelining, zřetězené zpracování či překrývání strojových instrukcí je způsob zvýšení výkonu
 procesoru současným prováděním různých částí několika strojových instrukcí. Základní myšlenkou je
@@ -252,12 +252,12 @@ Pojem pipeline je analogií faktu, že v potrubí je v každém úseku kapalina,
 procesoru zatížena prací.
 
 
-## Jednotky Procesoru..............................................................................................................................
+## Jednotky Procesoru
 
 ALU, FPU, Řadič – zajišťuje součinnost jednotlivých součástí procesoru , Vektorová jednotka –
 matematický koprocesor
 
-## HyperThreading...................................................................................................................................
+## HyperThreading
 
 **Hyper-threading (oficiálně Hyper-Threading Technology, též HT Technology, HTT, HT) je v
 informatice technologie používaná výrobcem procesorů Intel pro zjednodušené zajištění
@@ -270,7 +270,7 @@ nebo až o třetinu rychlejší).**
 
 Rychle přepíná mezi dvěma sadami registrů.
 
-## Možnosti zvětšování výkonu procesoru..............................................................................................
+## Možnosti zvětšování výkonu procesoru
 
 Pipelining, HyperThreading, Superskalarita – některé jednotky jsou v procesoru víckrát, Přetaktování,
 Rozšíření šířky slova – 32bit, 64bit, více jader, zefektivnění mikrokódu

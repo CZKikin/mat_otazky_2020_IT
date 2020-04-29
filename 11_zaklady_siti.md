@@ -1,6 +1,6 @@
-## 11. Síťe.....................................................................................................................................................
+## 11. Síťe
 
-### Ethernet...............................................................................................................................................
+### Ethernet
 
 **Ethernet** (výslovnost _iːθərnɛt_ ) je název souhrnu technologií pro počítačové sítě (LAN, MAN) z větší části
 standardizovaných jako IEEE 802.3, které používají kabely s kroucenou dvoulinkou, optické kabely (ve

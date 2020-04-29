@@ -1,6 +1,6 @@
-# 8. Multimedia...........................................................................................................................................
+# 8. Multimedia
 
-## PRINCIP DIGITALIZACE ZVUKU..................................................................................................
+## PRINCIP DIGITALIZACE ZVUKU
 
 Analogový zvukový signál (signálové napětí) je přiveden do takzvaného A/D (analog/digital)
 převodníku, jenž je součástí zvukové karty a ten ho převede do digitální podoby (na odpovídající číslo).
@@ -41,14 +41,14 @@ výslednou kvalitu v závislosti na použitém vzorkovacím kmitočtu a šířce
 získaný zvuk z A/D převodníku se označují jako RAW data (nezpracovaná, 3 čistá data). Pro jejich
 další použití je však nutno je uložit v určitém formátu
 
-## ZVUKOVÉ FORMÁTY.....................................................................................................................
+## ZVUKOVÉ FORMÁTY
 
 Pro to, aby se se zvukovými soubory dalo manipulovat (aby se daly přenášet, rozpoznat a přehrát),
 musí být tyto soubory opatřeny hlavičkou. Ta musí obsahovat údaje o délce záznamu, o rychlosti
 přehrávání (resp. sample rate), o počtu bitů na jeden vzorek a informace o typu záznamu, což může být
 buď mono nebo stereo. Zvukové formáty se dělí na ztrátové (např. MP3) a bezztrátové (WAV).
 
-### BEZZTRÁTOVÝ FORMÁT WAVE (.WAV)................................................................................
+### BEZZTRÁTOVÝ FORMÁT WAVE (.WAV)
 
 WAV je formát pro ukládání audiodat pro Windows, a proto je velmi rozšířený a podporuje ho většina
 programů pro práci se zvukem. Umožňuje jednoduchou manipulaci a editaci zvuku. Vzorky ukládá bez
@@ -57,7 +57,7 @@ soubory poměrně objemné a tím pádem ne moc praktické pro jejich masivněj�
 dnešních kapacitách HDD to přestává být problém) a pro sdílení přes Internet
 
 
-### ZTRÁTOVÉ KOMPRESNÍ FORMÁTY.......................................................................................
+### ZTRÁTOVÉ KOMPRESNÍ FORMÁTY
 
 Jak už bylo řečeno, běžně používaná kvalita záznamu zvuku je 16-bitová šířka slova při vzorkovacím
 kmitočtu 44,1 kHz, samozřejmě ve stereo kvalitě. Jedna sekunda zvuku tak zabere 44 100 2 2 = ⋅⋅
@@ -70,7 +70,7 @@ dekomprimuje poněkud odlišným způsobem). Nejznámější je formát MP3 (viz
 RA/RM (Real Audio) používaný k přenosu dat přes Internet, WMA (Windows Media Audio), VQF,
 OGG Vobis a další...
 
-## Pojmy grafiky......................................................................................................................................
+## Pojmy grafiky
 
 Pixel: je zkratka anglického PICture Element, tedy obrazový bod.
 
@@ -111,7 +111,7 @@ sytost barvy (saturace): čistota barvy;
 
 Rastová a Vektorová grafika
 
-### Formáty grafiky:.............................................................................................................................
+### Formáty grafiky
 
 Jpeg, gif, bmp – rastrová
 

@@ -1,4 +1,4 @@
-# 9. Databáze...............................................................................................................................................
+# 9. Databáze
 
 Databáze (neboli datová základna, též databanka) je systém souborů s pevnou strukturou záznamů. Tyto
 soubory jsou mezi sebou navzájem propojeny pomocí klíčů. V širším smyslu jsou součástí databáze i
@@ -6,7 +6,7 @@ softwarové prostředky, které umožňují manipulaci s uloženými daty a př�
 české odborné literatuře nazývá systém řízení báze dat (SŘBD). Běžně se označením _databáze_ – v
 závislosti na kontextu – myslí jak uložená data, tak i software (SŘBD).
 
-## Historie................................................................................................................................................
+## Historie
 
 Předchůdcem databází byly papírové kartotéky. Umožňovaly uspořádávání dat podle různých kritérií a
 zatřiďování nových položek. Veškeré operace s nimi prováděl přímo člověk. Správa takových kartoték byla
@@ -24,11 +24,11 @@ V 90. letech 20. století se začínaly objevovat první **objektově** orientov
 přebírána z objektově orientovaných jazyků. Tyto databáze měly podle předpokladů vytlačit relační
 systémy. Původní předpoklady se však nenaplnily a vznikla kompromisní **objektově-relační** technologie.
 
-## Databázové modely.............................................................................................................................
+## Databázové modely
 
 Z hlediska způsobu ukládání dat a vazeb mezi nimi dělíme databáze do základních typů:
 
-### Hierarchický model dat...................................................................................................................
+### Hierarchický model dat
 
 Data jsou organizována do stromové struktury. Každý záznam představuje uzel ve stromové struktuře,
 vzájemný vztah mezi záznamy je typu rodič/potomek. Nalezení dat v hierarchické databázi vyžaduje
@@ -41,7 +41,7 @@ některých případech i nepřirozená organizace dat.
 ```
 Obr. 1 - Hierarchický model
 ```
-### Síťový model dat............................................................................................................................
+### Síťový model dat
 
 Síťový model dat je v podstatě zobecněním hierarchického modelu, který doplňuje o mnohonásobné
 vztahy (sety). Tyto sety propojují záznamy různého či stejného typu, přičemž spojení může být
@@ -53,7 +53,7 @@ setu. Nevýhodou síťové databáze je zejména nepružnost a obtížná změna
 ```
 Obr. 2 - Síťový model
 ```
-### Relační model dat...........................................................................................................................
+### Relační model dat
 
 Relační databázový model je z uvedených nejmladší a zároveň nejpoužívanější. V roce 1970 byl popsán
 Dr. Coddem. V současnosti je nejčastěji využíván u komerčních SŘBD. Model má jednoduchou
@@ -68,7 +68,7 @@ Databáze dle relačního modelu musí splňovat tyto dvě vlastnosti:
 - V relačním SŘBD jsou k dispozici minimálně operace selekce, projekce a spojení, aniž by se
 vyžadovaly explicitně předdefinované přístupové cesty pro realizaci těchto operací.
 
-## SQL Dotazy.........................................................................................................................................
+## SQL Dotazy
 
 SELECT *
 FROM [Temp].[dbo].[udv_SalesByProducts]
@@ -93,7 +93,7 @@ FROM [Temp].[dbo].[udv_SalesByProducts]
 GROUP BY Rok
 ORDER BY Rok ASC;
 
-## Normalizace databáze..........................................................................................................................
+## Normalizace databáze
 
 je v informatice označení postupu, kdy je struktura dat v relační databázi přeorganizována tak, aby
 využívala výhody relačního modelu dat. Normalizace databáze umožňuje data efektivněji ukládat,
@@ -105,7 +105,7 @@ ohled na řešení problému s případnou nekonzistencí dat.
 
 Autorem termínu normalizace databáze je britsko-americký matematik a informatik Edgar. F. Codd.
 
-### Nultá normální forma (0NF)...........................................................................................................
+### Nultá normální forma (0NF)
 
 **Nultá normální forma** bývá obdobně jako nenormalizovaná forma zřídka v literatuře zmiňována. V
 některých případech je uváděna jako součást první normální formy. Obvykle není zvažována, jelikož její
@@ -114,14 +114,14 @@ splnění bývá v praxi automaticky zaručeno. Přesto lze nalézt následujíc
 Schéma relace je v nulté normální formě právě tehdy, když existuje alespoň jeden atribut, který obsahuje
 více než jednu hodnotu
 
-### První normální forma (1NF)...........................................................................................................
+### První normální forma (1NF)
 
 Pro splnění **první normální formy** je zapotřebí zajistit následující:
 
 - splnění nulté normální formy (0NF)
 - všechny atributy tabulky musí být atomické, tedy dále nedělitelné
 
-### Druhá normální forma (2NF)..........................................................................................................
+### Druhá normální forma (2NF)
 
 Pravidla definovaná **druhou normální formou** lze shrnout na následující:
 
@@ -130,7 +130,7 @@ Pravidla definovaná **druhou normální formou** lze shrnout na následující:
 rozumíme atribut, který není součástí žádného kandidátního klíče)
 Druhá normální forma klade důraz především na odstranění možných duplicit v záznamech.
 
-### Třetí normální forma (3NF)............................................................................................................
+### Třetí normální forma (3NF)
 
 **Třetí normální forma** klade následující podmínky:
 

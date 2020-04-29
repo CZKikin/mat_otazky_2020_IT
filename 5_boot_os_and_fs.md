@@ -1,6 +1,6 @@
-# 5. Boot OS a file systems.........................................................................................................................
+# 5. Boot OS a file systems
 
-## MBR a boot sektor..............................................................................................................................
+## MBR a boot sektor
 
 Jakmile proběhne úspěšný test zavádění systému, POST, najde a zavede (vygeneruje se přerušení 19h)
 se tzv. bootovací sektor (boot sektor) – tomuto procesu se říká bootování. Bootovací sektor je v tomto
@@ -58,7 +58,7 @@ specifické pro daný operační systém.
 
 Diskety a jednotky flash neobsahují MBR, ale VBR.
 
-## Fáze bootování OS..............................................................................................................................
+## Fáze bootování OS
 
 Bootování je proces oživení počítače, kdy dochází k probuzení počítače, postupnému zavedení operačního systému,
 inicializaci a konfiguraci texćhnického vybavení počítače. Celý proces bootování má dvě fáze. První je zcela nezávislá na
@@ -75,9 +75,9 @@ operační paměti příslušné jádro, tzv. kernel operačního systému a spu
 skupiny systémových součástí včetně grafického prostředí. Na konci celého procesu bootování je počítač připravený k práci,
 tedy spustit některý uživatelský program nebo vykonávat jiné příkazy uživatele.
 
-## Geometrie pevného disku....................................................................................................................
+## Geometrie pevného disku
 
-## Metody přístupu na disk......................................................................................................................
+## Metody přístupu na disk
 
 Čas přístupu na disk je dělen na tři části:
 
@@ -92,16 +92,16 @@ požadavku OS na disk je potřeba nejprve vystavit hlavy na příslušnou stopu 
 hlavami. U víceúlohových systémů mohou přicházet požadavky na disk rychleji, než je možné je vyřizovat.
 
 
-### FCFS (First Come, First Served)....................................................................................................
+### FCFS (First Come, First Served)
 
 Vyřizování požadavků v pořadí, jak přicházejí (tzv. FIFO nebo FCFS - First In First Out, First Come First Serve) není
 optimální a je vhodný pro lehké zátěže.
 
-### SSTF (Shortest Seek Time First)....................................................................................................
+### SSTF (Shortest Seek Time First)
 
 Naplánován je požadavek s nejmenším relativním pohybem hlavy. Existuje zde možnost, že nastane starvation.
 
-### SCAN..............................................................................................................................................
+### SCAN
 
 Je určen směr pohybu hlav. Z fronty jsou zpracovávány pouze požadavky postupně v určeném směru. Po zpracování
 nejkrajnějšího požadavku se směr pohybu hlav obrátí. Podvariantou je C-SCAN (Circular SCAN), který posouvá hlavy
@@ -111,9 +111,9 @@ pro velmi těžké zátěže.
 Poznamenejme, že moderní řadiče disků umí optimalizovat i požadavky pro přístup k disku v závislosti na poloze hlav a
 natočení disku. Výsledkem je změna pořadí požadavků a zrychlení vykonání požadavků v celkovém součtu.
 
-## Souborové systémy..............................................................................................................................
+## Souborové systémy
 
-### FAT32.............................................................................................................................................
+### FAT32
 
 FAT32 A version of the File Allocation Table (FAT) available in Windows 95 OSR 2 and Windows 98.
 FAT32 increases the number of bits used to address clusters and also reduces the size of each cluster.
@@ -121,7 +121,7 @@ The result is that it can support larger disks (up to 2 terabytes) and better st
 the older of the driven formats. FAT32 is the most common version of the FAT file system created back
 in 1977 by Microsoft. FAT had been the standard format for floppy disks and hard drives.
 
-### NTFS..............................................................................................................................................
+### NTFS
 
 NTFS stands for New Technology File System. It's the file system that the Windows NT operating
 system uses for storing and retrieving files on a hard disk. NTFS offers a number of improvements in
@@ -131,7 +131,7 @@ other desktop and server operating systems as well. Linux and BSD have a free an
 driver, called NTFS-3G, with both read and write functionality. macOS comes with read-only support
 for NTFS.
 
-### Ext4.................................................................................................................................................
+### Ext4
 
 Ext4 stands for a Fourth extended file system. It is the evolution of the most used Linux filesystem,
 Ext3. In many ways, Ext4 is a deeper improvement over Ext3 than Ext3 was over Ext2. Ext4 modifies
@@ -141,7 +141,7 @@ based encryption. In a directory tree marked for encryption, file contents, file
 targets are all encrypted. Encryption keys are stored in the kernel keyring.
 
 
-### FAT32 vs Ext4 vs NTFS.................................................................................................................
+### FAT32 vs Ext4 vs NTFS
 
 - FAT32 is the older. NTFS is the newer drive format. Ext4 is the newest of these drive formats.
 - FAT32 originally designed in 1977. NTFS introduced in July 1993. And Ext4 stable version released

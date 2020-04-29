@@ -1,4 +1,4 @@
-# 7. Algoritmizace.......................................................................................................................................
+# 7. Algoritmizace
 
 Algoritmus je přesný návod či postup, kterým lze vyřešit daný typ úlohy. Pojem algoritmu se nejčastěji
 objevuje při programování, kdy se jím myslí teoretický princip řešení problému (oproti přesnému zápisu v

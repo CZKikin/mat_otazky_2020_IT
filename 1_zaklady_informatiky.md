@@ -1,10 +1,10 @@
 # 1. Základy Informatiky
 
-## Číselné soustavy....................................................................................................................................
+## Číselné soustavy
 
 Dvojková, osmičková, desítková a šestnáctková.
 
-### Dvojková..........................................................................................................................................
+### Dvojková
 
 Nabývá hodnot 0 a 1. Používaná v informatice z důvodu lehce rozdělitelným stavům.
 
@@ -18,7 +18,7 @@ Převod:
 
 atd...
 
-### Šestnáctková.....................................................................................................................................
+### Šestnáctková
 
 Nabývá hodnot 0-9 a A-F. Používá se v informatice, kvůli zpříjemnění pro programátory.
 
@@ -28,7 +28,7 @@ A-F 10-
 
 0x10 = 16(dec)
 
-## Jednotky používané v informatice.........................................................................................................
+## Jednotky používané v informatice
 
 1 bit – základní jednotka informace... 1 nebo 0
 
@@ -43,9 +43,9 @@ A-F 10-
 atd.
 
 
-## Data a informace...................................................................................................................................
+## Data a informace
 
-### Informace..........................................................................................................................................
+### Informace
 
 Informace jsou data, kterým rozumíme, mají pro nás nějaký smysl. Informace můžeme kvantifikovat
 (měřit) teprve když je převedeme do podoby čísel. Veškeré stroje pracují s informacemi právě v podobě
@@ -63,15 +63,15 @@ U informací posuzujeme jejich:
     vědět a nic navíc.
 - pravdivost - soulad se skutečností
 
-### Data...................................................................................................................................................
+### Data
 
 Data jsou nekódované informace.
 
-### Signál................................................................................................................................................
+### Signál
 
 Signál je nositel informace (spíše dat).
 
-## Přímý kód..............................................................................................................................................
+## Přímý kód
 
 První možný způsob je vyčlenění prvního bitu jako znaménkového bitu. Pokud například binární číslo
 00000001 vyjadřuje jedničku, pak 10000001 označuje −1.
@@ -81,7 +81,7 @@ odlišné algoritmy a nejprve je vždy třeba testovat znaménkový bit a podle 
 nebo odčítání. Další nevýhodou je, že existují dvě reprezentace čísla nula – kladná nula a záporná nula.
 Proto byl později pro záznam záporných čísel zaveden doplňkový kód.
 
-## Zakódování informace...........................................................................................................................
+## Zakódování informace
 
 **Kódování informace v informatice**
 
@@ -90,14 +90,14 @@ Soubory s informací kódovanou známým způsobem jsou opatřeny známou příp
 programy, které toto kódování znají (pokud neurčíte jinak).
 
 
-## Propustnost............................................................................................................................................
+## Propustnost
 
 Je veličina, která říká, jaké množství dat je možné přenést za jednotku času. V toto číslo se může reálně
 měnit. Udává se v bitech či bytech za sekundu.
 
-## Typy přenosů dat...................................................................................................................................
+## Typy přenosů dat
 
-### Analogový a digitální přenos............................................................................................................
+### Analogový a digitální přenos
 
 Analogový přenos je přenos spojitého proměnného signálu, digitální komunikace je přenos diskrétních
 zpráv. Tyto zprávy jsou buďto reprezentovány sledem impulsů prostřednictvím linkového kódu
@@ -119,7 +119,7 @@ směrování a meziprocesovou komunikaci. Ačkoli TCP ( _Transmission Control Pr
 popsán v učebnicích nebo v kurzech o přenosu dat, ale v počítačových sítích.
 
 
-### Sériový a paralelní přenos................................................................................................................
+### Sériový a paralelní přenos
 
 V telekomunikacích je sériový přenos sekvenční přenos signálu, zastupující znaky nebo jiný druh dat.
 Digitální sériové přenosy jsou realizovány jako bity posílané přes jeden vodič nebo sekvenčně optickou
@@ -138,7 +138,7 @@ ostatní, což může poškodit zprávu. K řešení tohoto problému se nabíz�
 přenos na dlouhé vzdálenosti je stále méně spolehlivý, protože narušení přenosu je mnohem
 pravděpodobnější.
 
-## Takt a frekvence....................................................................................................................................
+## Takt a frekvence
 
 Frekvence, neboli takt procesoru, je udáván v gigahertzech. Tedy udává, kolik se uděje cyklických dějů
 (výpočtů) za jednu sekundu.

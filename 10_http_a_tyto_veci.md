@@ -1,6 +1,6 @@
-# 10. HTML/CSS/JS/PHP...........................................................................................................................
+# 10. HTML/CSS/JS/PHP
 
-## Browser Functions...............................................................................................................................
+## Browser Functions
 
 Webový prohlížeč vás provádí po internetu. Stahuje informace z různých částí webu a zobrazuje je na
 vašem počítači nebo mobilním zařízení. Text, obrázky a videa se po internetu přenášejí pomocí
@@ -22,7 +22,7 @@ Každá stránka, obrázek nebo video mají svou unikátní adresu nazvývanou U
 Locator (URL), známou také jako webovou adresu. Ta říká prohlížeči, kde najít HTML kód s
 daty webové stránky, a ten zase říká, kam je má na stránce umístit
 
-## Význam HTML...................................................................................................................................
+## Význam HTML
 
 **Hypertext Markup Language** (zkratka **HTML** ) je v informatice název značkovacího jazyka
 používaného pro tvorbu webových stránek, které jsou propojeny hypertextovými odkazy. HTML je
@@ -33,7 +33,7 @@ Jazyk je aplikací dříve vyvinutého rozsáhlého univerzálního značkovací
 Generalized Markup Language_ ). Vývoj HTML byl ovlivněn vývojem webových prohlížečů, které
 zpětně ovlivňovaly definici jazyka.
 
-## CSS......................................................................................................................................................
+## CSS
 
 **Kaskádové styly** (v anglickém originále _Cascading Style Sheets_ se zkratkou **CSS** ) je v informatice
 jazyk pro popis způsobu zobrazení elementů na stránkách napsaných v jazycích HTML, XHTML nebo
@@ -50,7 +50,7 @@ informací není takový vývoj žádoucí.
 .class #identifikator
 
 
-## JS.........................................................................................................................................................
+## JS
 
 „ _JavaScript je skriptovací jazyk, který byl vyvinut firmou Netscape Corporation.“_ [1] Byl navržen jako
 doplněk jiných aplikací a je využitelný při tvorbě interaktivních webových stránek. Umožňuje obohatit
@@ -66,7 +66,7 @@ fungovat např. tlačítka, textová pole u formulářů a jiné interaktivní p
 zdrojového kódu stránky vkládat třemi způsoby (podobně jako CSS): jako externí soubor, vložením
 přímo zdrojového kódu a přiřazením jednotlivým elementům jazyka HTML.
 
-## PHP......................................................................................................................................................
+## PHP
 
 **PHP** (rekurzivní zkratka _PHP:_ **_Hypertext Preprocessor_** , česky „PHP: Hypertextový preprocesor“,
 původně **_Personal Home Page_** ) je skriptovací programovací jazyk. Je určený především pro
