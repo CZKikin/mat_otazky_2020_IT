@@ -38,5 +38,5 @@ jazyce se nazývá program. Některé algoritmy jsou sice determinované, ale ne
 Algoritmus má alespoň jeden _výstup_ , veličinu, která je v požadovaném vztahu k zadaným vstupům, a tím
 tvoří odpověď na problém, který algoritmus řeší (algoritmus vede od zpracování hodnot k výstupu)
 
-##Diagram
+## Diagram
 ![HDD](images/Diagram.png)
