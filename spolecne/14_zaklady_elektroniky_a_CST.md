@@ -29,5 +29,35 @@ který nastává ve vhodném fyzikálním prostředí, vlivem elektrického pole
 Jako fyzikální veličina je elektrický proud definován množstvím 
 elektrického náboje Q prošlého soustavou za určitý čas t.
 ```
-$I= \frac{Q}{t}$
+I= Q/t
 ```
+Směr toku elektrického proudu je dán konvencí jako směr pohybu částic s kladným 
+nábojem. V elektrických obvodech tedy proud teče od kladného pólu 
+elektrického zdroje přes spotřebič k zápornému pólu zdroje. Tento směr je opačný 
+ke směru pohybu volných elektronů v pevných vodičích. Elektrický proud 
+stejnosměrný (direct current, DC, =) protéká obvodem jedním směrem, 
+který se s časem nemění. Střídavý proud (alternating current, AC, ~) periodicky mění svůj 
+směr i velikost.
+
+Jednotka elektrického proudu – ampér (A) – je základní jednotkou SI. 
+Je definován jako elektrický proud, který při stálém průtoku dvěma rovnoběžnými přímými 
+nekonečně dlouhými vodiči zanedbatelného kruhového průřezu, umístěnými ve vakuu ve 
+vzájemné vzdálenosti 1 metr, vyvolá mezi nimi stálou sílu o velikosti 2·10–7 newtonu 
+na 1 metr délky vodiče.
+
+### Elektrický odpor 
+Elektrický odpor (rezistance) je fyzikální veličina charakterizující schopnost daného systému vést elektrický proud. Závisí na materiálu, teplotě, délce a průřezu vodiče. Každý materiál má charakteristický měrný odpor ρ (rezistivitu). 
+S rostoucí délkou vodiče L roste jeho odpor R, s rostoucím průřezem vodiče A jeho odpor klesá.
+```
+R=(ró)*L/A
+```
+
+### Elektrické napětí
+
+Elektrické napětí je definováno jako rozdíl elektrických potenciálů mezi dvěma body v elektrickém poli nebo jako 
+práci vykonanou při přemístění kladného jednotkového elektrického náboje 
+mezi dvěma body elektrického pole.
+
+Jednotkou elektrického potenciálu a elektrického napětí je volt (V). 
+Je to napětí mezi konci vodiče, do něhož stálý proud 1 ampéru 
+dodává výkon 1 wattu.
