@@ -76,7 +76,7 @@ Značí se písmenem P a jeho jednotkou je watt, značený písmenem W.
 Elektrický výkon je druhem výkonu, u kterého práci koná elektrická síla
 
 ```
-P = U*I => W=P*t (Ws, kWh)
+P = U*I -> W=P*t (Ws, kWh)
 ```
 
 Účinnost je fyzikální veličina, která udává poměr mezi výkonem a příkonem stroje při vykonávání práce.
@@ -97,3 +97,46 @@ Proto účinnost je vždy menší než 100 %.
 ![Paralelní zapojení](images/zapojeni_paralel.png)
 
 ## Zdroje napětí
+**Nebudu se zdržovat pak dodělám**
+Elektrický zdroj funguje na principu rozdílu záporně nabitých částic
+(elektronů) na pólech. + a - se přitahují -> vznik elektrického proudu.
+
+Může být myšleno jako Zdroj elektrického napětí je zařízení, 
+ve kterém se přeměňuje jiný druh energie na energii elektrickou.
+
+## Základní logické funkce
+
+### AND
+Logický součin – má na výstupu log. 1 pouze tehdy, je-li na všech jeho vstupech log. 1.
+Matematický zápis: Y = A * B
+
+### NAND
+Negovaný logický součin – má na výstupu log. 1 pouze tehdy, 
+pokud není na všech vstupech log. 1. Je to negovaný (opačný) 
+výsledek logického součinu (AND). Je to nejpoužívanější log. člen.
+Matematický zápis: Y = /(A * B)
+
+### OR
+Logický součet – má na výstupu log. 1 pouze tehdy, 
+pokud je alespoň na jednom vstupu log. 1.
+Matematický zápis: Y = A + B
+
+### NOR
+Negovaný logický součet – má na výstupu log. 1 pouze tehdy, 
+pokud je na všech vstupech log. 0. Je to negovaný (opačný) 
+výsledek logického součtu (OR).
+Matematický zápis: Y = /(A + B)
+
+### XOR
+Exklusivní logický součet – má na výstupu log. 1 pouze tehdy, 
+pokud je na vstupech rozdílná log. hodnota.
+Matematický zápis: Y = /(A B)
+
+### NOT 
+Logická negace (invertor) – na výstupu je vždy opačná logická 
+hodnota než na vstupu.
+Matematický zápis: Y = /A
+
+### YES (repeater)
+Opakovač – na výstupu je vždy stejná logická hodnota jako na vstupu.
+Matematický zápis: Y = A
