@@ -147,4 +147,18 @@ Boolean -> True a False
 Mezi těmito stavy, je zakázané pásmo (Zamezuje špatné registraci hodnoty)
 ![Logické úrovně](images/logicke.jpg)
 
+### Vysvětlivky:
+```
+VOH     (Voltage Output High; minimální výstupní napětí pro logickou 1)
+VCC     (kladné napájecí napětí integrovaného obvodu)
+VOL     (Voltage Output Low; maximální výstupní napětí pro logickou 0)
+VIH     (Voltage Input High; minimální vstupní napětí pro logickou 1)
+VIH-max (maximální vstupní hodnota napětí pro logickou 1) 
+VIL-min (minimální vstupní hodnota napětí pro logickou 0)
+VIL     (Voltage Input Low; maximální vstupní hodnota napětí pro logickou 0)
+VCC     (připojený kolektor tranzistoru – Collector)
+VEE     (připojený emitor tranzistoru – Emitter) 
+VDD     (kladné napájecí napětí; Drain)
+VSS     (GND nebo záporné napájecí napětí; Source)
 
+```
