@@ -76,6 +76,7 @@ skupiny systémových součástí včetně grafického prostředí. Na konci cel
 tedy spustit některý uživatelský program nebo vykonávat jiné příkazy uživatele.
 
 ## Geometrie pevného disku
+![HDD](images/hadr.jpg)
 
 ## Metody přístupu na disk
 
