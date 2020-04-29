@@ -91,9 +91,9 @@ Proto účinnost je vždy menší než 100 %.
 
 ## Sériové a Paralelní zapojení resistorů 
 ### Sériové zapojení
-![Seriové zapojení](images/serie.png)
+![Seriové zapojení](images/zapojeni_serie.png)
 
 ### Paralelní zapojení
-![Paralelní zapojení](images/paralel.png)
+![Paralelní zapojení](images/zapojeni_paralel.png)
 
 ## Zdroje napětí
