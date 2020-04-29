@@ -39,4 +39,4 @@ Algoritmus má alespoň jeden _výstup_ , veličinu, která je v požadovaném v
 tvoří odpověď na problém, který algoritmus řeší (algoritmus vede od zpracování hodnot k výstupu)
 
 ##Diagram
-![HDD](images/Diagram.jpg)
+![HDD](images/Diagram.png)

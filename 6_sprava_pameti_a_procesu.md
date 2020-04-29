@@ -10,6 +10,7 @@ senzorovejch sítí, Realtime OS, smartcard OS
 
 
 ## Evidence procesů
+![Evidence Procesů](images/evidence_procesu.png)
 
 Proces má více stavů:
 
@@ -104,6 +105,8 @@ registr, ve kterém je uložena adresa začátku paměti procesu (tedy odděluje
 od paměti procesu), tento registr pak proces nesmí překročit. Pokud proces (vlákno) žádá o přístup k
 určité adrese, porovnáme tuto adresu s registrem, a jestli je adresa větší, přístup povolíme.
 
+![Přidělení paměti](images/pridelovani_oblasti_pameti.png)
+
 Výhody:
 
 - jednoduchost správy,
@@ -177,6 +180,7 @@ Nevýhody:
 paměti,
 - určitá pravděpodobnost fragmentace, ta se ale dá řešit přesouváním segmentů.
 
+![Segmentace](images/segmentace_pameti.png)
 
 ## Defragmentace
 
@@ -242,6 +246,7 @@ Nevýhody:
 virtuální pamět’ a (obvykle) spojení se segmentací běžně používána v současných operačních
 systémech
 
+![Stránkování](images/strankovani_pameti.png)
 
 ## RING 0-3
 
@@ -255,6 +260,8 @@ Na nákresech architektur operačních systémů v předchozích sekcích této 
 obvykle barevně odlišeny (v barvách podle obrázku 2.8). Z výše uvedeného vyplývá, že Ring 1 a Ring
 2 obvykle nejsou používány. Přesto je lze využít pro další rozškálování přístupových oprávnění a
 například s Ring 1 se setkáme u některých virtualizačních technik, zejména na serverech.
+
+![Ring 0-3](images/ringy.png)
 
 ## Swapování
 
