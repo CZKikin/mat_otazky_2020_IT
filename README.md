@@ -18,7 +18,7 @@ Ano, jste povoleni otázky upravovat, pak pošlete pull req.
 - [x] 12
 - [x] 13 - Nebudu to vypracovávat
 - [x] 14 - Chybí nějaké informace
-- [ ] 15S
+- [x] 15S - Jen anglicky
 - [ ] 16S
 - [ ] 17S
 - [ ] 18S
