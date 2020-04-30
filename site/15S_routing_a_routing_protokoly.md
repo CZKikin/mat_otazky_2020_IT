@@ -89,7 +89,7 @@ Integrated Intermediate System – Intermediate System routing protocol is a lin
 - LSP Types: Internal L1 and L2, External L2
 - Designated Router Election , No BDR
 
-##BGP
+## BGP
 
 rder Gateway Protocol is an exterior gateway protocol, which is different from the interior gateway protocols discussed so far. The distinction is important since the term autonomous system is used somewhat differently with protocols such as EIGRP than it is with BGP. Exterior gateway protocols such as BGP route between autonomous systems, which are assigned a particular AS number. AS numbers can be assigned to an office with one or several BGP routers. The BGP routing table is comprised of destination IP addresses, an associated AS-Path to reach that destination and a next hop router address. The AS-Path is a collection of AS numbers that represent each office involved with routing packets. Contrast that with EIGRP, which uses autonomous systems as well. The difference is their autonomous systems refer to a logical grouping of routers within the same administrative system.
 
