@@ -5,56 +5,54 @@
 ## Standardy 802.11(a,b,g,n)
 **nic**
 
-## Parametry
-
-### Frekvence
+## Frekvence
 **nic**
 
-### Útlum
+## Útlum
 **nic**
 
-### Zisk
+## Zisk
 **nic**
 
-### Kanály
+## Kanály
 **nic**
 
-### Dosah
+## Dosah
 **nic**
 
-### Rychlost přenosu
+## Rychlost přenosu
 **nic**
 
-### Výpočet vzdálenosti
+## Výpočet vzdálenosti
 **nic**
 
-### Antény
+## Antény
 **nic**
 
-### Fresnelova zóna
+## Fresnelova zóna
 **nic**
 
-### Šíření VF signálu
+## Šíření VF signálu
 **nic**
 
-### Modulace
+## Modulace
 Proces, při kterém je některý z parametrů nosné vlny ovlivňován modulačním signálem.
-#### Analogové modulace
-##### Amplitudová modulace
+### Analogové modulace
+#### Amplitudová modulace
 **nic**
 
-##### Frekveční modulace
+#### Frekveční modulace
 
-#### Digitální modulace
-##### Frequency shift keying (FSK)
-##### Fázová modulace (PSK - Phase shift keying)
+### Digitální modulace
+#### Frequency shift keying (FSK)
+#### Fázová modulace (PSK - Phase shift keying)
 
-#### Vícestavové Digitální modulace
-##### 4-PSK
-##### QPSK
-##### Modulace QAM
+### Vícestavové Digitální modulace
+#### 4-PSK
+#### QPSK
+#### Modulace QAM
 
 
-### MIMO
+## MIMO
 **nic**
 
