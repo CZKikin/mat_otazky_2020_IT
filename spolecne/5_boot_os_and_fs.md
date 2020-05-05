@@ -61,7 +61,7 @@ Diskety a jednotky flash neobsahují MBR, ale VBR.
 ## Fáze bootování OS
 
 Bootování je proces oživení počítače, kdy dochází k probuzení počítače, postupnému zavedení operačního systému,
-inicializaci a konfiguraci texćhnického vybavení počítače. Celý proces bootování má dvě fáze. První je zcela nezávislá na
+inicializaci a konfiguraci technického vybavení počítače. Celý proces bootování má dvě fáze. První je zcela nezávislá na
 instalovaném OS a je na dané architektuře zcela stejná. Začíná stiskem vypínače, po němž začne systémový program ROM
 BIOS uložený ve vnitřní pevné paměti počítače vykonávat základní test hardwaru počítače POST. Zjištěné skutečnosti
 porovnává se záznamy o základním nastavení počítače uloženými v paměti CMOS RAM. Program ROM BIOS potom
