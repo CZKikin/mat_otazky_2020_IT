@@ -146,7 +146,7 @@ skládá se z několika částí:ULICE,ČÍSLO,MĚSTO a PSČ. Správný návrh t
 který bude respektovat 1NF bude vypadat následovně:
 
 JMÉNO | PŘÍJMENÍ | ULICE | ČÍSLO | MĚSTO | PSČ
---- | --- | ---
+--- | --- | --- | --- | --- | ---
 jan | novák | Ostravská | 16 | Praha | 16000
 petr | nový | Svitavská | 8 | Brno | 61400
 jan | nováček | Na bradlech | 1147 | Ostrava | 79002
@@ -170,9 +170,8 @@ pak 2NF je splněna triviálně.
 Nechť máme tabulku PRACOVNÍK, která bude vypadat následovně (atributČÍS_PRAC značí číslo pracoviště, 
 kde daný pracovník pracuje, atribut NÁZEV_PRAC uvádí jméno daného pracoviště):
 
-
 ČÍSLO | JMÉNO | PŘÍJMENÍ | ČÍS_PRAC | NÁZEV_PRAC
---- | --- | ---
+--- | --- | --- | --- | ---
 1 | jan | novák | 10 | studovna
 2 | petr | nový | 15 | centrála
 3 | jan | nováček | 10 | studovna
@@ -252,7 +251,7 @@ Z praktického hlediska je vhodnější použít nějaký číselník funkcí, a
 3 | jan | nováček | 127
 
 ```
-Autor: Hledá se!
+Autor: Mizera Šimon
 Merger: Sádlík Kryštof
 Datum: 6.5.2020
 ```

@@ -140,7 +140,7 @@ MP4, avi, - video
 – Využití k reklamním účelům, předvedení výrobků, služeb, doprovodný předmět k přednáškám, 
 oživují jakékoliv vystoupení
 ```
-Autor: Hledá se!
+Autor: Adam Vrána
 Merger: Sádlík Kryštof
 Datum: 6.5.2020
 ```
