@@ -1,100 +1,114 @@
 # 6. Správa procesů a paměti
 
-## Typologie OS
+## Primární funkce operačních systémů
+- správa paměti, procesů, periferií, systému, souborů, uživatelů, úloh
+- uživatelské rozhraní
+- programové rozhraní (API)
 
-Víceuživatelské, síťové atd.
 
-Mainframe operating systems, OS strediskových pocitacu, Server OS, servery, Multiprocesor OS, více
-CPU, PC OS, PS, Handheld OS, mobily, embeddes Os, OS embedded zarizeni, Sensor node OS, OS
-senzorovejch sítí, Realtime OS, smartcard OS
+## Rozdělení OS
 
+- dle počtu ovládaných procesorů:
+    - jednoprocesorové
+    - víceprocesorové
+- dle počtu spravovaných uživatelů:
+    - jednouživatelské
+    - více uživatelské
+- dle počtu spuštěných programů (úloh):
+    - jednoprogramové
+    - víceprogramové (s multitaskingem)
+- dle míry specializace:
+    - speciální
+    - univerzální
+- speciální kategorie:
+    - operační systémy reálného času (RTOS)
+        - vyznačují se nízkou reakční dobou, jsou schopny reagovat téměř   okamžitě na události v reálném čase
+        - používají se zejména v náročných aplikacích - elektrárny, letecký provoz
+        - příklady: RT Linux, QNX, nadstavba IntervalZero RTX, VxWorks
+    - distribuované operační systémy
+        - operační systém schopný pracovat na více uzlech spojených počítačovou sítí
 
 ## Evidence procesů
 ![Evidence Procesů](images/evidence_procesu.png)
 
-Proces má více stavů:
+Procesem se rozumí instance programu - již spuštěný a běžící program, se kterým se pojí jeho stav (běhový stav, ID, prostředky, kontext, ...).
 
-nový – vytvořen, jsou mi přidělovány prostředky
+Proces může mít tyto stavy:
+- nový (new) – vytvořen, čeká na počáteční alokaci prostředků
+- připravený (ready) - čeká se na změnu kontextu a spuštění procesu
+- běžící (running) – proces byl naplánován na konkrétní procesor a běží
+- čekající (waiting) – čeká na I/O prostředek či událost
+- ukončený (terminated) – běh procesu byl ukončen
 
-running – proces má přidělen čas CPU
-
-ready – čeká na CPU
-
-waiting – čeká na I/O
-
-Terminated – ukončen
-
-V rámci některých OS mohou byt definovány i další stavy. Např. v UNIXových
-
-systémech může být proces navíc v jednom z těchto stavu:
-
-- pozastaveny – provádění programu je pozastaveno (to se provádí signálem SIGTRAP), obvykle
-
-požadavkem debuggeru, typicky při ladění programu,
-
-- zombie – program byl v podstatě ukončen, užř nemí žádný kód k provádění a nedostává procesor,
-
-ale jeho prostředky (vč. PID) ještě nebyly uvolněny, to se používá např. tehdy, když si
-
-rodič tohoto procesu explicitně vyžádal tento typ ukončení, aby měl dost času na
-
-vyzvednutí výsledku činnosti tohoto svého potomka,
-
-- uspany (sleeping) – proces čeká na splnění podmínky např. Uplynutí časového
-
-intervalu nebo nějakou událost.
+V rámci některých OS mohou byt definovány i další stavy. Např. v UNIXových systémech může být proces navíc v jednom z těchto stavu:
+- pozastaven – provádění programu je pozastaveno (to se provádí signálem SIGTRAP), 
+  obvykle požadavkem debuggeru, typicky při ladění programu,
+- zombie – program byl v podstatě ukončen, užř nemí žádný kód k provádění a nedostává procesor, 
+  ale jeho prostředky (vč. PID) ještě nebyly uvolněny, to se používá např. tehdy, když si rodič tohoto procesu explicitně 
+  vyžádal tento typ ukončení, aby měl dost času na vyzvednutí výsledku činnosti tohoto svého potomka.
+- uspaný (sleeping) – proces čeká na splnění podmínky např. uplynutí časového intervalu nebo nějakou událost.
 
 ## Správa procesů
 
-Kontext procesu je souhrn břehových informací o procesu. Při různých typech multitaskingu zde
-řadíme různé informace, obvykle jsou součástí kontextu tato data:
+Kontext procesu je souhrn břehových informací o procesu. Při různých typech multitaskingu zde řadíme různé informace, obvykle jsou součástí kontextu hodnoty registrů procesoru.
 
-- obsah adresových registru (programový čítač , segmentové registry, zásobníkový registr),
+Procesy se evidují pomocí struktury zvané Process Control Block (PCB), která mj. obsahuje tyto položky:
+- ID procesu
+- stav procesu
+- ukazatele do front
+- informace správy paměti
+- seznam přidělených prostředků (soubory, zařízení, ...)
 
-
-- registr příznaku ,
-- pokud program není psán tak, aby počítal s případnými změnami v datových registrech při přepnutí
-kontextu, uložíme zde i obsah datových registrů,
-- stav koprocesoru, pokud ho proces používá,
-- stav dalších zařízení, který proces používá a nejsou řízena systémem. Druh informací, které jsou
-součástí kontextu procesu, záleží především na typu multitaskingu, ve kterém procesy pracují.
 Procesy mohou běžet několika způsoby:
-- sekvencne – další proces může byt spuštěn až po ukončení činnosti předchozího,
-- sekvencne-paralelne – je spuštěno více procesů, které se dělí o čas procesoru (například se v určitých
-intervalech střídají při jeho využívání) multitaskový system, ⇒
-- paralelne – procesy pracují souběžně, každý může běžet na jiném procesoru multiprocesorový ⇒
-systém s multitaskingem. Pokud máme víceprocesorový systém nebo systém s jedním vícejádrovým
-procesorem, mohou procesy běžet paralelně (třetí způsob), pričemž se uplatňuje i sekvenčně-paralelní
-běh, protože často máme víc spuštěných procesů než jader procesoru. Když se procesy střídají na
-jednom procesoru (k tomu může dojít v druhem nebo třetím případě), dochází k přepínání kontextu,
-tedy změně běhových informací o procesu uložených na ”globálních“ místech (například registry
-procesoru), proto je nutné kontext dosud běžícího procesu příklad každém přepnutí uložit, například do
-PCB (tedy tabulky procesu) nebo do paměťového prostoru příslušného procesu – do jeho zásobníku.
-Při přepínání kontextu se uloží kontext původně běžícího procesu a obnoví kontext následujícího
-procesu.
+- sekvenčně – další proces může byt spuštěn až po ukončení činnosti předchozího,
+- sekvenčně-paralelně – je spuštěno více procesů, které se dělí o čas procesoru (například se v 
+  určitých intervalech střídají při jeho využívání)
+- paralelně – procesy pracují souběžně, každý může běžet na jiném procesoru multiprocesorový ⇒ systém s multitaskingem. 
+  Pokud máme víceprocesorový systém nebo systém s jedním vícejádrovým procesorem, mohou procesy běžet paralelně (třetí způsob),
+  pričemž se uplatňuje i sekvenčně-paralelní běh, protože často máme víc spuštěných procesů než jader procesoru. 
+  Když se procesy střídají na jednom procesoru (k tomu může dojít v druhem nebo třetím případě), dochází k přepínání kontextu, 
+  tedy změně běhových informací o procesu uložených na "globálních místech" (například registry procesoru), 
+  proto je nutné kontext dosud běžícího procesu příklad každém přepnutí uložit, například do PCB (tedy tabulky procesu) 
+  nebo do paměťového prostoru příslušného procesu – do jeho zásobníku. 
+  Při přepínání kontextu se uloží kontext původně běžícího procesu a obnoví kontext následujícího procesu.
 
 ## Správa paměti
 
 Modul správce paměti je v operačních systémech většinou součástí jádra. Jeho implementace může být
 různá, ale funkce jsou obvykle podobné:
 
-1. Udržuje informace o paměti (která část je volná, která část je přidělena, kterému procesu je
-přidělena, atd.).
-2. Přiděluje paměť procesům na jejich žádost.
-3. paměť, kterou procesy uvolní, zařazuje k volné paměti.
-4. Pokud je to nutné, odebrat paměť procesům.
-5. Jestliže je možné detekovat případy, kdy proces ukončí svou činnost bez uvolení paměti (například
-při chybě v programu nebo při násilném ukončení), pak modul tuto paměť uvolní sám.
-6. Pokud to dovoluje úroveň hardwarového vybavení (především procesor), může zajišťovat ochranu
-paměti, tedy nedovolí procesu přístup do paměťového prostoru jiného procesu nebo dokonce do
-paměťového prostoru operačního systému.
+- udržuje informace o paměti (která část je volná, která část je přidělena, kterému procesu je 
+  přidělena, atd.).
+- přiděluje paměť procesům na jejich žádost.
+- paměť, kterou procesy uvolní, zařazuje k volné paměti.
+- pokud je to nutné, odebrat paměť procesům.
+- jestliže je možné detekovat případy, kdy proces ukončí svou činnost bez uvolení paměti (například 
+  při chybě v programu nebo při násilném ukončení), pak modul tuto paměť uvolní sám.
+- pokud to dovoluje úroveň hardwarového vybavení (především procesor), může zajišťovat ochranu paměti, 
+  tedy nedovolí procesu přístup do paměťového prostoru jiného procesu nebo dokonce do paměťového 
+  prostoru operačního systému.
 
 
-## Réalné metody přidělování paměti
+## Reálné metody přidělování paměti
 
-Zde probereme metody používané v případě, že logický adresový prostor nepřekračuje fyzický, tedy
-fyzická vnitřní pamět’ dostačuje potřebám procesů, a možnosti řešení problémů vznikajících při
-používání těchto metod.
+Používají se v případech, kdy logický adresní prostor nepřekračuje fyzický adresní prostor
+- přidělení jedné souvislé oblasti paměti – spočívá v přidělení veškerého adresového prostoru kromě oblasti OS
+    - výhody: jednoduchost
+    - nevýhody: nemožnost míst spuštěno více programů
+- přidělování bloků pevné velikosti
+    - výhody: jednoduchost, možnost multitaskingu
+    - nevýhody: proces vyžadující více paměti, než je délka největšího volného bloku nelze spustit
+- dynamické přidělování bloků paměti
+    - výhody: částečně odstraňuje nevýhody předchozí metody
+    - nevýhody: pravděpodobnost fragmentace, počet spustitelných procesů je limitován požadavky již 
+      spuštěných procesů
+- Segmentace – každému procesu je přiřazeno několik různě dlouhých bloků paměti (segmentů) 
+    - výhody: velikost segmentů může být různá, segmenty lze prodlužovat a přesouvat
+    - nevýhody: nutnost HW podpory, komplikovanější ochrana paměti
+- jednoduché stránkování – pracuje s fyz. a log. adresou objektu v paměti, paměťový prostor je rozdělen 
+  na stejně dlouhé úseky a procesu je přiděleno tolik úseků, kolik potřebuje 
+    - výhody: nejsou problémy s fragmentací
+    - nevýhody: omezení daná velikostí fyz. adresového prostoru
 
 ## Přidělení jedné souvislé oblasti paměti
 
@@ -276,7 +290,6 @@ přesunuta a pak zopakována poslední instrukce.
 
 Výhody:
 
-
 - je to poměrně jednoduchá metoda,
 - V celém časovém intervalu, po který je procesu přidělen procesor, je přerušení související s přesunem
 paměti vyvoláno nejvýše jednou.
@@ -289,3 +302,9 @@ navíc je nutné nejdřív tento prostor najít,
 - přesouvají se zbytečně velké pamět’ové bloky,
 - hardwarově závislé řešení. Tato metoda se původně používala u starých UNIXových systémů na
 hardwarových architekturách bez podpory stránkování.
+
+```
+Autor: Sloučeny práce od Vojty Oravy a Kryštofa Sádlíka
+Merger: Vít Staniček
+Datum: 6.5.2020
+```

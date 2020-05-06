@@ -9,48 +9,38 @@ Dvojková, osmičková, desítková a šestnáctková.
 Nabývá hodnot 0 a 1. Používaná v informatice z důvodu lehce rozdělitelným stavům.
 
 Převod:
-
-0000 0
-
-0001 1 2^
-
-0010 2 2^
-
+|    | |
+|----|-|
+|0000|0|
+|0001|1|
+|0010|2|
 atd...
 
 ### Šestnáctková
 
 Nabývá hodnot 0-9 a A-F. Používá se v informatice, kvůli zpříjemnění pro programátory.
-
-0-9 0-
-
-A-F 10-
-
-0x10 = 16(dec)
+|   |     |
+|---|-----|
+|0-9|0-9  |
+|A-F|10-15|
+`0x10 = 16(dec)`
 
 ## Jednotky používané v informatice
 
-1 bit – základní jednotka informace... 1 nebo 0
-
-1 byte = 8 Bitů
-
-1Kb = 1000 b
-
-1Kib = 2^10b = 1024b
-
-1Mib = 2^20b = 1 048 576
-
+```
+1 bit – základní jednotka informace - 1 nebo 0
+1 B (byte) = 8 bitů
+1 kB = 1000 b
+1 kiB = 2^10 B = 1024 B
+1 MiB = 2^20 B = 1 048 576
+```
 atd.
-
 
 ## Data a informace
 
 ### Informace
 
-Informace jsou data, kterým rozumíme, mají pro nás nějaký smysl. Informace můžeme kvantifikovat
-(měřit) teprve když je převedeme do podoby čísel. Veškeré stroje pracují s informacemi právě v podobě
-čísel převedených do dvojkové číselné soustavy. Informace, které zpracovává počítač jsou (prozatím)
-několika druhů:
+Informaci lze definovat jako zmenšení neurčitosti jevu. Lze ji vysílat, přijímat, uchovávat a zpracovávat. Informace, které zpracovává počítač jsou (prozatím) několika druhů:
 
 - textové informace (texty, programy...)
 - obrazové informace (fotografie, grafiky, video, animace...)
@@ -58,9 +48,8 @@ několika druhů:
 
 U informací posuzujeme jejich:
 
-- aktuálnost -
-- relevanci - adekvátnost potřebě. Informace je relevantní, je-li v ní obsaženo to, co potřebujeme
-    vědět a nic navíc.
+- aktuálnost
+- relevanci - adekvátnost potřebě. Informace je relevantní, je-li v ní obsaženo to, co potřebujeme vědět.
 - pravdivost - soulad se skutečností
 
 ### Data
@@ -69,11 +58,11 @@ Data jsou nekódované informace.
 
 ### Signál
 
-Signál je nositel informace (spíše dat).
+Signál je nositel informace (dat).
 
 ## Přímý kód
 
-První možný způsob je vyčlenění prvního bitu jako znaménkového bitu. Pokud například binární číslo
+První možný způsob jak vyjádřit záporné číslo - vyčlenění prvního bitu jako znaménkového bitu. Pokud například binární číslo
 00000001 vyjadřuje jedničku, pak 10000001 označuje −1.
 
 Tento způsob ale komplikuje algoritmy pro praktické počítání – pro sčítání a odčítání jsou potřeba
@@ -85,10 +74,8 @@ Proto byl později pro záznam záporných čísel zaveden doplňkový kód.
 
 **Kódování informace v informatice**
 
-veškeré informace uloženy v souborech, kódovány pomocí číslic0 a
-Soubory s informací kódovanou známým způsobem jsou opatřeny známou příponou a zpracovávány
-programy, které toto kódování znají (pokud neurčíte jinak).
-
+Veškeré informace uloženy v souborech, kódovány pomocí číslic 0 a 1. Soubory s informací kódovanou známým způsobem jsou opatřeny známou příponou a zpracovávány programy, které 
+toto kódování znají.
 
 ## Propustnost
 
@@ -140,5 +127,10 @@ pravděpodobnější.
 
 ## Takt a frekvence
 
-Frekvence, neboli takt procesoru, je udáván v gigahertzech. Tedy udává, kolik se uděje cyklických dějů
-(výpočtů) za jednu sekundu.
+Frekvence, neboli takt procesoru, je udáván v gigahertzech. Tedy udává, kolik se uděje cyklických dějů (výpočtů) za jednu sekundu.
+
+```
+Autor: Sloučeny práce Adama Kadlčíka a Kryštofa Sádlíka
+Merger: Vít Staniček
+Datum: 6.5.2020
+```
