@@ -323,4 +323,8 @@ v superglobální proměnné _$_POST_ a to ve stejném formátu, jako výše. Po
 soubory, jejich metadata budou uvedena v superglobální proměnné _$_FILES_ , které lze později
 zpracovat jejich otevřením, nebo přesunutím funkcí _move_uploaded_file_.
 
-
+```
+Autor: Vít Staniček
+Merger: Kryštof Sádlík
+Datum: 6.5.2020
+```
