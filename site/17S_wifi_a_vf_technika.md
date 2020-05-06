@@ -5,7 +5,8 @@ Wi-Fi (nebo také Wi-fi, WiFi, Wifi, wi-fi, wifi) je v informatice označení pr
 
 ## Standardy 802.11(a,b,g,n)
 
-| Standard | Označení | Rok[GHz] | Pásmo[Mbit/s] | Max rychlost | Fyzická vrstva |
+| Standard     | Označení   | Rok[GHz] | Pásmo[Mbit/s] | Max rychlost | Fyzická vrstva |
+| ------------ | ---------- | -------- | ------------- | ------------ | -------------- |
 | IEEE 802.11 | - | 1997 | 2.4 | 2 | DSSS a FHSS |
 | IEEE 802.11a | Wi-Fi 1 | 1999 | 5 | 54 | OFDM |
 | IEEE 802.11b | Wi-Fi 2 | 1999 | 2.4 | 11 | DSSS |
