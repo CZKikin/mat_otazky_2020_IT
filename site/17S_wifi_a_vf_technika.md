@@ -1,10 +1,19 @@
 # 17. Wi-Fi a VF Technika
 ## Využití Wi-Fi a druhy připojení
-**nic**
+Wi-Fi (nebo také Wi-fi, WiFi, Wifi, wi-fi, wifi) je v informatice označení pro několik standardů IEEE 802.11 popisujících bezdrátovou komunikaci v počítačových sítích (též Wireless LAN, WLAN). Samotný název WiFi vytvořilo Wireless Ethernet Compatibility Aliance. Tato technologie využívá tak zvaného „bezlicenčního frekvenčního pásma“,proto je ideální pro budování levné, ale výkonné sítě bez nutnosti pokládky kabelů. Název původně neměl znamenat nic,[4] ale časem se z něj stala slovní hříčka wireless fidelity (bezdrátová věrnost) analogicky k Hi-Fi (high fidelity – vysoká věrnost).
+*Nemám páru co je kurva druh připojení Wi-Fi*
 
 ## Standardy 802.11(a,b,g,n)
-**nic**
-
+Standard|Označení|Rok[GHz]|Pásmo[Mbit/s]|Max rychlost|Fyzická vrstva
+IEEE 802.11|-|1997|2.4|2|DSSS a FHSS
+IEEE 802.11a|Wi-Fi 1|1999|5|54|OFDM
+IEEE 802.11b|Wi-Fi 2|1999|2.4|11|DSSS
+IEEE 802.11g|Wi-Fi 3|2003|2.4|54|OFDM
+IEEE 802.11n|Wi-Fi 4|2009|2.4/5|600|MIMO OFDM
+IEEE 802.11y|-|2008|3.7|54||
+IEEE 802.11ac|Wi-Fi 5|2013|5|3466.8|MU-MIMO OFDM
+IEEE 802.11ad|-|2012|60|6757||
+IEEE 802.11ax|Wi-Fi 6|2019|2.4/5/6|10530|MIMO-OFDM
 ## Frekvence
 **nic**
 
