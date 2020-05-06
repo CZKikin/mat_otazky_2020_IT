@@ -69,9 +69,7 @@ viz. **Dosah**
 Proces, při kterém je některý z parametrů nosné vlny ovlivňován modulačním signálem.
 Pro přenos zpráv  na různé vzdálenosti se používají VF vlny různých frekvencí, nazývané nosné vlny. Přenášené zprávy musí vhodným způsobem ovlivňovat některou charakteristickou veličinu nosné vlny: amplitudu ,frekvenci ,fázi,sled impulsů apod.. Toto ovlivňování nosné vlny se nazývá modulace.
 
-Než dojde k modulaci, je nutné změny různých fyzikálních veličin (zvuk, světlo,
-
-teplota, tlak aj.), které představují přenášené zprávy, přeměnit na jim odpovídající elektrické signály. Těmito signály, které se nazývají modulační signály se potom provádí modulace.
+Než dojde k modulaci, je nutné změny různých fyzikálních veličin (zvuk, světlo, teplota, tlak aj.), které představují přenášené zprávy, přeměnit na jim odpovídající elektrické signály. Těmito signály, které se nazývají modulační signály se potom provádí modulace.
 ### Analogové modulace
 
 #### Amplitudová modulace

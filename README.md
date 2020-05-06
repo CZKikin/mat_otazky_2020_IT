@@ -1,6 +1,8 @@
 # Maturitní otázky pro IT v roce 2020
 
 Ano, jste povoleni otázky upravovat, pak pošlete pull req.
+---
+Progress halted 'till we have more information. May also be all made again from ground up.
 
 *ALL HEIL IT4*
 
@@ -20,7 +22,7 @@ Ano, jste povoleni otázky upravovat, pak pošlete pull req.
 - [x] 14 - Chybí nějaké informace
 - [x] 15S - Jen anglicky
 - [x] 16S - Jen anglicky
-- [ ] 17S
+- [ ] 17S - Work in progress
 - [ ] 18S
 - [ ] 19S
 - [ ] 20S
