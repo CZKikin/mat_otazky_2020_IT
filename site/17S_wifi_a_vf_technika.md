@@ -1,5 +1,5 @@
 # 17. Wi-Fi a VF Technika
-## Využití Wi-Fi a druhy připojení
+## Využití Wi-Fo a druhy připojení
 Wi-Fi (nebo také Wi-fi, WiFi, Wifi, wi-fi, wifi) je v informatice označení pro několik standardů IEEE 802.11 popisujících bezdrátovou komunikaci v počítačových sítích (též Wireless LAN, WLAN). Samotný název WiFi vytvořilo Wireless Ethernet Compatibility Aliance. Tato technologie využívá tak zvaného „bezlicenčního frekvenčního pásma“,proto je ideální pro budování levné, ale výkonné sítě bez nutnosti pokládky kabelů. Název původně neměl znamenat nic,[4] ale časem se z něj stala slovní hříčka wireless fidelity (bezdrátová věrnost) analogicky k Hi-Fi (high fidelity – vysoká věrnost).
 *Nemám páru co je kurva druh připojení Wi-Fi*
 
@@ -17,23 +17,17 @@ Wi-Fi (nebo také Wi-fi, WiFi, Wifi, wi-fi, wifi) je v informatice označení pr
 | IEEE 802.11ad | - | 2012 | 60 | 6757 | - | - |
 | IEEE 802.11ax | Wi-Fi 6 | 2019 | 2.4/5/6 | 10530 | MIMO-OFDM |
 
-test
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
-
 ## Frekvence
-**nic**
+Frekvence (též kmitočet) je fyzikální veličina, která udává počet opakování periodického děje za daný časový úsek. Například v obvodu střídavého proudu takto označujeme počet kmitů napětí či proudu za jednotku času.
 
 ## Útlum
-**nic**
+Útlum volného prostoru (anglicky free-space path loss; FSPL) je v telekomunikaci útlum elektromagnetické vlny, který je důsledkem rozptylu vlny do prostoru. Nezahrnuje zisk antény.Vztah pro útlum volného prostoru často vede k mylnému názoru, že útlum volného prostoru závisí na frekvenci elektromagnetické vlny. Výše uvedený výraz totiž ve skutečnosti kombinuje dva efekty. Rozptyl elektromagnetické energie ve volném prostoru, který je nepřímo úměrný druhé mocnině vzdálenost a účinnou (efektivní) plochu antény (aperturu), která popisuje, jak dobře anténa "chytá" výkon přicházející elektromagnetické vlny.
 
 ## Zisk
-**nic**
+Udává, kolikrát větší výkon přijímací anténa poskytuje buď vůči půlvlnnému dipólu nebo vůči teoretické dokonale všesměrové anténě, tzv. izotropnímu zářiči
 
 ## Kanály
-**nic**
+
 
 ## Dosah
 **nic**
