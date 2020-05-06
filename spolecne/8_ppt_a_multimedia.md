@@ -1,5 +1,12 @@
 # 8. Multimedia
 
+## Zvuk
+- Mechanické vlnění
+- Člověk vnímá 16 Hz až 20 000 Hz, <16 Hz = infrazvuk, >20 000 Hz = ultrazvuk
+- Rychlost zvuku: 340 m/s
+- Vákuum je zvukovou izolací
+- K reprodukci zvuku slouží reproduktory nebo sluchátka
+
 ## PRINCIP DIGITALIZACE ZVUKU
 
 Analogový zvukový signál (signálové napětí) je přiveden do takzvaného A/D (analog/digital)
@@ -13,8 +20,6 @@ signálu. Vznikne tzv. aproximovaná funkce. Je tedy jasné, že digitální zvu
 napodobit zvuk analogový, protože průběh „mezi vzorky“ je prostě neznámý. Pro správnou funkci D/A
 (Digital/Analog) převodníku, jež zpětně rekonstruuje digitální záznam do analogové formy (abychom
 si hudbu mohli poslechnout), je podle tzv. vzorkovacího teorému třeba, aby frekvence vzorkování byla
-
-
 alespoň dvakrát větší než nejvyšší frekvence vzorkovaného signálu. Jinak řečeno, při nejvyšším
 přenášeném kmitočtu budou z každé periody odebrány právě dva vzorky. Protože lidské ucho je
 schopno slyšet zvuk o maximální frekvenci asi 20 kHz, běžně používaný vzorkovací kmitočet je 44,1
@@ -118,3 +123,24 @@ Jpeg, gif, bmp – rastrová
 SVG, CDR, AI – vektor
 
 MP4, avi, - video
+
+## Pravidla pro trvorbu prezentace
+- Prezentace je pouze doplňkový materiál, na každý snímek max. 5 odrážek(max 5 slov)
+- Má především podtrhnout fakta
+- Myšlenky zformulovat do klíčových hesel, při prezentaci je dále rozvést
+
+### Šablony, multimediální objekty a jejich využití
+
+#### Šablona 
+- Vzor nebo plán snímku, případně skupiny snímků (barvy, písma, efekty…)
+- Může obsahovat konkrétní tematický obsah, formátování pozadí
+
+#### Multimediální objekty 
+
+- Využití k reklamním účelům, předvedení výrobků, služeb, doprovodný předmět k přednáškám, 
+oživují jakékoliv vystoupení
+```
+Autor: Adam Vrána
+Merger: Sádlík Kryštof
+Datum: 6.5.2020
+```
