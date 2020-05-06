@@ -3,11 +3,11 @@
 *ALL HEIL IT4*
 
 - [ ] 1 (WIP, existuje odpověď na Moodlu)
-- [ ] 2 (WIP, existuje odpověď na Moodlu)
+- [x] 2 
 - [ ] 3 (WIP, existuje odpověď na Moodlu)
 - [ ] 4 (WIP, existuje odpověď na Moodlu)
-- [ ] 5 (WIP, existuje odpověď na Moodlu)
-- [ ] 6 (WIP, existuje odpověď na Moodlu)
+- [x] 5 
+- [x] 6
 - [ ] 7 (WIP)
 - [x] 8
 - [x] 9
