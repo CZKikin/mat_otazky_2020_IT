@@ -16,6 +16,12 @@ Wi-Fi (nebo také Wi-fi, WiFi, Wifi, wi-fi, wifi) je v informatice označení pr
 | IEEE 802.11ad | - | 2012 | 60 | 6757 | - | - |
 | IEEE 802.11ax | Wi-Fi 6 | 2019 | 2.4/5/6 | 10530 | MIMO-OFDM |
 
+test
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+
 ## Frekvence
 **nic**
 
