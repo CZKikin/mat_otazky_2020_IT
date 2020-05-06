@@ -9,6 +9,7 @@
 - [ ] 5 (WIP, existuje odpověď na Moodlu)
 - [ ] 6 (WIP, existuje odpověď na Moodlu)
 - [ ] 7 (WIP)
+- [x] 8
 - [x] 9
 - [x] 10
 - [ ] 11 (WIP)
