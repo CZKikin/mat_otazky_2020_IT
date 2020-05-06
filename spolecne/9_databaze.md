@@ -254,4 +254,5 @@ Z praktického hlediska je vhodnější použít nějaký číselník funkcí, a
 ```
 Autor: Hledá se!
 Merger: Sádlík Kryštof
+Datum: 6.5.2020
 ```
