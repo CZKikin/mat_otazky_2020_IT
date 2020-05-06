@@ -1,6 +1,7 @@
 # 17. Wi-Fi a VF Technika
 ## Využití Wi-Fo a druhy připojení
 Wi-Fi (nebo také Wi-fi, WiFi, Wifi, wi-fi, wifi) je v informatice označení pro několik standardů IEEE 802.11 popisujících bezdrátovou komunikaci v počítačových sítích (též Wireless LAN, WLAN). Samotný název WiFi vytvořilo Wireless Ethernet Compatibility Aliance. Tato technologie využívá tak zvaného „bezlicenčního frekvenčního pásma“,proto je ideální pro budování levné, ale výkonné sítě bez nutnosti pokládky kabelů. Název původně neměl znamenat nic,[4] ale časem se z něj stala slovní hříčka wireless fidelity (bezdrátová věrnost) analogicky k Hi-Fi (high fidelity – vysoká věrnost).
+
 *Nemám páru co je kurva druh připojení Wi-Fi*
 
 ## Standardy 802.11(a,b,g,n)
@@ -27,25 +28,42 @@ Frekvence (též kmitočet) je fyzikální veličina, která udává počet opak
 Udává, kolikrát větší výkon přijímací anténa poskytuje buď vůči půlvlnnému dipólu nebo vůči teoretické dokonale všesměrové anténě, tzv. izotropnímu zářiči
 
 ## Kanály
-
+![Kanály](images/wifi_kan.png)
+Standard 802.11 dělí každé z výše popsaných pásem do kanálů podobným způsobem, jako jsou rozděleny pásma rozhlasového a televizního vysílání. Například pásmo 2,4000-2,4835 GHz je rozděleno do 13 kanálů vzájemně posunutých o 5 MHz, přičemž kanál 1 pracuje na frekvenci 2,412 GHz a kanál 13 na frekvenci 2,472 GHz (Japonsko přidalo 14. kanál, který je povolen pouze pro 802.11b, a je posunut o 12 MHz od kanálu 13). 802.11b byl založen na DSSS modulaci s celkovou šířkou kanálu 22 MHz bez strmých prahů. Kvůli tomu jsou pouze tři nepřekrývající se kanály v celém pásmu. Dokonce i nyní je mnoho zařízení dodáváno s přednastavenými kanály 1, 6 a 11, i když novější standard 802.11g umožňuje čtyři vzájemně se nepřekrývající kanály - 1, 5, 9 a 13. Nyní jsou k dispozici čtyři, protože ODFM modulované 802.11g kanály jsou 20 MHz široké.
 
 ## Dosah
-**nic**
+Výkon vysílané vlny.
+```
+P = E*H [w] 
+```
+Plošná hustota výkonu v danném místě je
+```
+P/S "S - Povrch koule"
+```
+Při šíření vlny na zemském povrchu se vlna může ohýbat, odrážet a pronikat překážkami.
+
+*Víc nemůžu sehnat*
 
 ## Rychlost přenosu
-**nic**
+Rychlost světla, přes překážky nižší, ztráty a odrážení.
 
 ## Výpočet vzdálenosti
 **nic**
 
 ## Antény
-**nic**
+Anténa je zařízení k příjmu nebo k vysílání rádiových signálů, je to část vysokofrekvenčního vedení upravená tak, aby účinně vyzařovala energii do prostoru. Antény se dělí na antény přijímací a antény vysílací (v principu ale může každá anténa vysílat i přijímat):
+
+- vysílací anténa je určena k přeměně elektrické energie na energii elektromagnetických vln
+- přijímací anténa naopak slouží k přeměně energie elektromagnetických vln na elektrickou energii
+- přijímací a vysílací zároveň
+
+Elektromagnetické vlny vyzařuje každý vodič, kterým prochází střídavý elektrický proud. Anténa je vodič upravený takovým způsobem, aby vyzařoval maximální množství elektrické energie. Ne každé uspořádání vodičů zaručuje maximum vyzařované energie. Například kroucené dvojlinky, používané v telekomunikacích, mají množství vyzařované i přijímané (rušení) energie optimalizované na minimum. Jako nejjednodušší anténu lze využít symetrický zářič, takzvaný dipól. Ten vychází z úseku vedení o délce poloviny vlnové délky vysílaného/přijímaného signálu.
 
 ## Fresnelova zóna
-**nic**
+Fresnelova zóna je jednou z řady konfokálních protáhlý elipsoidní oblasti prostoru mezi a kolem vysílací antény a přijímací antény. Regiony se používají k pochopení a vypočítat sílu vln (například zvukové nebo rádiových vln) šířící se mezi vysílačem a přijímačem, jakož i předpovědět, zda překážky v blízkosti linie spojující vysílač a přijímač způsobí výrazný zásah.
 
 ## Šíření VF signálu
-**nic**
+viz. **Dosah**
 
 ## Modulace
 Proces, při kterém je některý z parametrů nosné vlny ovlivňován modulačním signálem.
