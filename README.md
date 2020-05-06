@@ -1,9 +1,5 @@
 # Maturitní otázky pro IT v roce 2020
 
-Ano, jste povoleni otázky upravovat, pak pošlete pull req.
----
-Progress halted 'till we have more information. May also be all made again from ground up.
-
 *ALL HEIL IT4*
 
 - [ ] 1 (WIP, existuje odpověď na Moodlu)
@@ -13,9 +9,9 @@ Progress halted 'till we have more information. May also be all made again from 
 - [ ] 5 (WIP, existuje odpověď na Moodlu)
 - [ ] 6 (WIP, existuje odpověď na Moodlu)
 - [ ] 7 (WIP)
-- [ ] 8 (WIP, existuje odpověď na Moodlu)
-- [ ] 9 (WIP, existuje odpověď na Moodlu)
-- [ ] 10 (WIP, existuje odpověď na Moodlu)
+- [x]  
+- [x] 9
+- [x] 10
 - [ ] 11 (WIP)
 - [ ] 12 (WIP)
 - [ ] 13 (WIP)
@@ -34,3 +30,5 @@ Progress halted 'till we have more information. May also be all made again from 
 - [ ] 19P (WIP)
 - [ ] 20P (WIP)
 - [ ] 21P (WIP)
+
+***Updated at 14:03 6.5.2020***
