@@ -176,16 +176,17 @@ uživatelských interakcí.
 
 Přidávat vlastní funkce (handlery) k událostem HTML prvků lze třemi způsoby:
 
-
+```
 - uvedením úryvku kódu jako hodnotu atributu – např. <button
 onclick="myfunction()" >
 - přímým nastavením na získanou instanci prvku – např. window.onload = myfunction;
 - použitím funkce addEventListener na získané instanci prvku – např.
 window.addEventListener("load", myfunction); , lze takto uvést více handlerů
-
+```
 Mezi nejčastěji využívané události mj. patří:
 
 
+```
 - change
 - click
 - mouseover
@@ -193,6 +194,7 @@ Mezi nejčastěji využívané události mj. patří:
 - keydown
 - keyup
 - load
+```
 
 ## Funkce
 
@@ -203,10 +205,9 @@ Funkce v JavaScriptu mají stejnou váhu jako proměnné, lze je tedy i jako pro
 
 Deklarace funkce je možná třemi způsoby:
 
-- pojmenovaná funkce – např. function myfunction(x) { return x * 2 ; }
-- výrazem – např. function (x) { return x * 2 ; } (který lze uložit třeba do proměnné
-- **_let_** _myfunction =_ **_function_** _(x) {_ **_return_** _x * 2 ; }_ )
-- lambda výrazem – např. _(x) => x * 2_ , vhodné pro funkce skládající se z jednoho příkazu
+- pojmenovaná funkce – např. ***function*** myfunction(x) { return x \* 2 ; }
+- výrazem – např. ***function*** (x) { ***return*** x \* 2 ; } (který lze uložit třeba do proměnné ***let*** *myfunction* = ***function*** _(x) { ***return*** _x * 2 ; }_ )
+- lambda výrazem – např. \_(x) => x \* 2_ , vhodné pro funkce skládající se z jednoho příkazu
 
 # PHP
 
