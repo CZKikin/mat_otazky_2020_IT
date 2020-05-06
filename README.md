@@ -14,7 +14,7 @@
 - [x] 10
 - [ ] 11 (WIP)
 - [ ] 12 (WIP)
-- [ ] 13 (WIP)
+- [x] 13
 - [ ] 14 (WIP)
 - [ ] 15S (Kryštof: Jen anglicky)
 - [ ] 16S (Kryštof: Jen anglicky)
