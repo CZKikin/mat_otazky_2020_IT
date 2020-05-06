@@ -132,12 +132,12 @@ MP4, avi, - video
 ### Šablony, multimediální objekty a jejich využití
 
 #### Šablona 
-– Vzor nebo plán snímku, případně skupiny snímků (barvy, písma, efekty…)
+- Vzor nebo plán snímku, případně skupiny snímků (barvy, písma, efekty…)
 - Může obsahovat konkrétní tematický obsah, formátování pozadí
 
 #### Multimediální objekty 
 
-– Využití k reklamním účelům, předvedení výrobků, služeb, doprovodný předmět k přednáškám, 
+- Využití k reklamním účelům, předvedení výrobků, služeb, doprovodný předmět k přednáškám, 
 oživují jakékoliv vystoupení
 ```
 Autor: Adam Vrána
