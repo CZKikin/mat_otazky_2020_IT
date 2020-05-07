@@ -4,8 +4,8 @@
 
 - [x] 1
 - [x] 2 
-- [ ] 3 (WIP, existuje odpověď na Moodlu)
-- [ ] 4 (WIP, existuje odpověď na Moodlu)
+- [x] 3 
+- [x] 4 
 - [x] 5 
 - [x] 6
 - [ ] 7 (WIP)
@@ -31,4 +31,4 @@
 - [ ] 20P (WIP)
 - [ ] 21P (WIP)
 
-***Updated at 14:03 6.5.2020***
+***Updated at 10:00 7.5.2020***
