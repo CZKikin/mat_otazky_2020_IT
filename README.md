@@ -17,7 +17,7 @@
 - [x] 13
 - [ ] 14 (WIP)
 - [ ] 15S (Kryštof: Jen anglicky)
-- [ ] 16S (Kryštof: Jen anglicky)
+- [x] 16S
 - [ ] 17S (WIP)
 - [ ] 18S (WIP)
 - [ ] 19S (WIP)
@@ -31,4 +31,4 @@
 - [ ] 20P (WIP)
 - [ ] 21P (WIP)
 
-***Updated at 10:00 7.5.2020***
+***Updated at 10:30 7.5.2020***
