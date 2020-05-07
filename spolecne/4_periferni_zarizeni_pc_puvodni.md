@@ -53,6 +53,20 @@ zájmu a používají se v zařízeních, jako jsou pokladny, terminály, a tam,
 průklepem. Rychlost tisku činí až 1000 znaků za sekundu. Tisk grafiky je možný pouze v nízkém
 rozlišení, s omezenou paletou barev a nízkou rychlostí.
 
+```diff
+Výhody:
++ Levný tisk (1 páska = 500 stran)
++ Kopírování průklepem
++ Okamžitě připravená k tisku
++ schopna tisknout po řádcích
++ Schopna tisknout i po pěti letech nečinnosti
+Nevýhody:
+- Pomalý tisk
+- Hlučný tisk
+- Rozlišení
+- Ruční vkládání papíru
+```
+
 #### Inkoustová
 
 Drahý inkoust, musí se dávat pozor aby nezaschla hlava. Mnohem kvalitnější a rychlejší tisk než
@@ -67,6 +81,18 @@ vystřikuje na papír. Pro velkou cenu kopie a nízkou cenu tiskárny jsou inkou
 především pro domácí použití a malé kanceláře. Při míchání barev se používá systém CMYK (azurová,
 purpurová, žlutá, černá). Fototiskárny používají navíc další inkousty jako je šedá, nebo světlejší odstíny
 azurové a purpurové.
+
+```diff
+Výhody:
++ Pořizovací ceny
++ Nejlevnější jsou barevné
++ Tisk fotek
+Nevýhody:
+- Drahý tisk
+- Polijeme-li výtisk vodou, rozpije se
+- Při nevyužívání zasychají trysky
+```
+
 
 
 #### Laserová
@@ -90,6 +116,31 @@ barviva. Na válci se tak vytvoří viditelný obraz z práškového barviva, za
 exponovaných místech Obraz je přenesen na papír. Přenosu napomáhá záporně nabitá plocha (resp.
 válec), přiložená k zadní straně papíru Obraz vytvořený práškovým barvivem je “ustálen” horkým
 přítlačným válcem nebo ohřevem IR zářením.
+
+```diff
+Výhody:
++ Levný tisk
++ Tisk se nerozpíjí po polití vodou
++ Kvalitní tisk textu a grafiky
+Nevýhody:
+- Vznik ozonu (musí se větrat)
+- Barevný soutisk barev (4 válce)
+- Pořizovací ceny
+- první výtisk trvá déle
+- Toner se může vysypat
+- Toner může začít hořet, pokud jej začneme vysávat, kvůli statické elektřině
+```
+
+#### Termální
+Jehličky, které se zahřívají fotocitlivý papír.
+```diff
+Výhody:
++ Konstrukční jednoduchost
++ Malá, levná
+
+Nevýhody:
+- Nestálost v čase
+```
 
 ### Scanner
 
@@ -218,3 +269,8 @@ velkokapacitních paměťových zařízení, jako jsou pevné a optické disky. 
 ## Zobrazovací soustavy
 
 CMYK, RGB
+
+```
+Autor: Milan Urbaník
+Merger: Sádlík Kryštof
+Datum: 7.5.2020
