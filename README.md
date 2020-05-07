@@ -2,7 +2,7 @@
 
 *ALL HEIL IT4*
 
-- [ ] 1 (WIP, existuje odpověď na Moodlu)
+- [x] 1
 - [x] 2 
 - [ ] 3 (WIP, existuje odpověď na Moodlu)
 - [ ] 4 (WIP, existuje odpověď na Moodlu)
