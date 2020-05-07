@@ -216,10 +216,10 @@ avizovanou vlastností byla zpětná kompatibilita a plánovaná rychlost 10 Gb/
 
 #### USB-C
 
-3. prosince 2013 byl znám konkrétní návrh standardu a konektoru (nazývaného typ C). Ten se má
+3\. prosince 2013 byl znám konkrétní návrh standardu a konektoru (nazývaného typ C). Ten se má
 rozměry blížit variantě microUSB, svými vlastnostmi konektoru Lightning od Applu. Stejně jako ten
-půjde typ C[5] USB 3.1 zasunout oběma směry navíc i vzhůru nohama, takže bude opět lehčí potmě
-zapojit nabíječku. První zařízení s novým USB-C se začala objevovat v polovině roku 2014.[6] (Nový
+půjde typ C USB 3.1 zasunout oběma směry navíc i vzhůru nohama, takže bude opět lehčí potmě
+zapojit nabíječku. První zařízení s novým USB-C se začala objevovat v polovině roku 2014. (Nový
 MacBook). Nový konektor nebude disponovat pouze datovou prostupností 10 Gb/s, ale může být
 použit i k napájení. Maximem je 5 A při 20 V, tedy 100 W (v porovnání se starší verzí je to až 40x
 více), což bude dostačovat i pro napájení většiny notebooků. Tento konektor je kompatibilní s: Linux,
