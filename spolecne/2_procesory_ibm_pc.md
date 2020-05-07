@@ -3,11 +3,11 @@
 ## Charakteristika a parametry procesorů IBM-PC kompatibilní
 
 ### i8086
-- 1. v r. 1969 od Intelu - Intel 4004 - 4bit s fr. 108 KHz
+- \1. v r. 1969 od Intelu - Intel 4004 - 4bit s fr. 108 KHz
 - v r. 1977
-- 1. 16bit proc.
+- \1. 16bit proc.
 - zpětně kompatibilní s i8080
-- 1. s architekturou x86
+- \1. s architekturou x86
 - 16b vnitřní architektura
 - 16b datová sběrnice
 - 20b adresní sběrnice
