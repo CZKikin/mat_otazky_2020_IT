@@ -144,7 +144,7 @@ def mocnina(cislo):
 ```
 
 ### Operátory Pythonu 
-> == \ 
+> == \
 > \> \
 > \< \
 > \<= \
@@ -157,4 +157,4 @@ Porovná jestli obě proměnné odkazují na stejný objekt a ačkoliv mohou mí
 `in`
 Operátor in zjišťuje, zda-li je řetězec obsažený v jiném řetězci (lze použít i s jinými datovými typy). \
 `not`
-Vytváří negaci podmínky, lze použít s operátory is a in. \
+Vytváří negaci podmínky, lze použít s operátory is a in.
