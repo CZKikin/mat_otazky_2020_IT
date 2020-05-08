@@ -158,3 +158,9 @@ Porovná jestli obě proměnné odkazují na stejný objekt a ačkoliv mohou mí
 Operátor in zjišťuje, zda-li je řetězec obsažený v jiném řetězci (lze použít i s jinými datovými typy). \
 `not`
 Vytváří negaci podmínky, lze použít s operátory is a in.
+
+```
+Autor: Jakub Šimurda
+Merger: Sádlík Kryštof
+Datum: 8.5.2020
+```
