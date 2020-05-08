@@ -92,7 +92,7 @@ má TCP/IP pouze čtyři vrstvy, kde každá vrstva využívá služeb sousední
 a poskytuje služby sousední vyšší vrstvě. Komunikace mezi stejnými vrstvami dvou 
 různých systémů je řízena komunikačním protokolem za použití spojení vytvořeného sousední nižší vrstvou.
 
-![model TCP/IP](images/tcp.gif)
+![model TCP/IP](images/tcp.jpg)
 
 ## MAC adresy
 
