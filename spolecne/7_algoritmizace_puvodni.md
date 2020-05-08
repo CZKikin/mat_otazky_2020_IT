@@ -144,17 +144,17 @@ def mocnina(cislo):
 ```
 
 ### Operátory Pythonu 
-> ==
-> \>
-> \<
-> \<=
-> \>=
-> !=
+> == \ 
+> \> \
+> \< \
+> \<= \
+> \>= \
+> != \
 Slouží k porovnávání hodnot.
 
 `is`
-Porovná jestli obě proměnné odkazují na stejný objekt a ačkoliv mohou mít proměnné stejnou hodnotu, tak nemusí odkazovat na stejný objekt.
+Porovná jestli obě proměnné odkazují na stejný objekt a ačkoliv mohou mít proměnné stejnou hodnotu, tak nemusí odkazovat na stejný objekt. \
 `in`
-Operátor in zjišťuje, zda-li je řetězec obsažený v jiném řetězci (lze použít i s jinými datovými typy).
+Operátor in zjišťuje, zda-li je řetězec obsažený v jiném řetězci (lze použít i s jinými datovými typy). \
 `not`
-Vytváří negaci podmínky, lze použít s operátory is a in.
+Vytváří negaci podmínky, lze použít s operátory is a in. \
