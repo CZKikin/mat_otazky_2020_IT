@@ -50,7 +50,7 @@ Tímto příkazem se provede dotaz do databáze, pokud vše proběhne správě.
 ## Hashování
 Vstupní data jsou na výstupu razantně změněna.
 
-`MD5 \[md5(text)]` – používal se u hesel, dnes už by se kvůli špatné bezpečnosti neměl používat. 
+`MD5 [md5(text)]` – používal se u hesel, dnes už by se kvůli špatné bezpečnosti neměl používat. 
 Byly vytvořené tzv. **rainbow** tables, které obsahují miliony kombinací hesel s předpočítaným hashem. 
 MD5 hashovala 2 stejné text stejně, tzn., že když bylo v databázi několik stejných hesel, jejich hash byl taky stejný. 
 Proto se pro větší bezpečnost zavedlo přidání „soli“ – tzn, že k heslu byl ještě připsán třeba email a výsledný hash byl jiný. Výsledná délka hashe je 32 znaků. 
