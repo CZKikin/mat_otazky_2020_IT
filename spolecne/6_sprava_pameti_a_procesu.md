@@ -303,6 +303,11 @@ navíc je nutné nejdřív tento prostor najít,
 - hardwarově závislé řešení. Tato metoda se původně používala u starých UNIXových systémů na
 hardwarových architekturách bez podpory stránkování.
 
+## Endianita
+Určuje pořadí ukládání jednotlivých bajtů příslušného datového typu. Jedná se o způsob, 
+který definuje, v jakém pořadí jsou v operační paměti ukládány jednotlivé řady čísel, 
+které mají vice jak jeden bajt. V praxi se můžete setkat i s pojmem byte order (pořadí bajtů).
+
 ```
 Autor: Sloučeny práce od Vojty Oravy a Kryštofa Sádlíka
 Merger: Vít Staniček

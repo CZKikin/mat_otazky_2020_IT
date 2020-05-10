@@ -97,18 +97,42 @@ Proto účinnost je vždy menší než 100 %.
 ![Paralelní zapojení](images/zapojeni_paralel.png)
 
 ## Zdroje napětí
-**Nebudu se zdržovat pak dodělám**
-Elektrický zdroj funguje na principu rozdílu záporně nabitých částic
-(elektronů) na pólech. + a - se přitahují -> vznik elektrického proudu.
+Zdroj napětí je v elektrotechnice takový zdroj, 
+který na svém výstupu udržuje stálé elektrické napětí 
+bez ohledu na elektrický proud. Ideální zdroj napětí neexistuje, 
+protože vnitřní odpor reálného zdroje omezuje maximální proud, 
+který může elektrickým obvodem protékat. 
+Reálný elektrický zdroj může pro zajištění stabilního napětí na výstupu 
+používat stabilizátor napětí, který zajišťuje pomocí úbytku napětí.
 
-Může být myšleno jako Zdroj elektrického napětí je zařízení, 
-ve kterém se přeměňuje jiný druh energie na energii elektrickou.
+Podle vnitřního odporu lze rozdělit elektrické zdroje na **tvrdé a měkké**. 
+Tvrdý zdroj má odpor menší než 1 Ω (např olověný akumulátor). 
+Měkký zdroj má vnitřní odpor větší než 1 Ω. 
+
+Reálné zdroje napětí: 
+- Měnič napětí (AC adaptér, transformátor) 
+- Chemické zdroje (primární článek = Voltvů článek, zinko-uhlíkový článek, sekundární článek = olověný akumulátor, alkalický akumulátor) 
+- Mechanické zdroje (elektrický generátor – dynamo, alternátor) 
+- Tepelné zdroje (termočlánek) 
+
 
 ## Základní logické funkce
+
+Logická funkce je funkce, která pro konečný počet vstupních parametrů vrací 
+logické hodnoty. Používá se v oboru teorie řízení a číslicové techniky, 
+v praxi pak například v mikroprocesorové technice. 
+Parametry logické funkce jsou logické proměnné. 
 
 ### AND
 Logický součin – má na výstupu log. 1 pouze tehdy, je-li na všech jeho vstupech log. 1.
 Matematický zápis: Y = A * B
+
+ A | B | Y
+--- | --- | ---
+0 | 0 | 0
+0 | 1 | 0
+1 | 0 | 0
+1 | 1 | 1
 
 ### NAND
 Negovaný logický součin – má na výstupu log. 1 pouze tehdy, 
@@ -116,10 +140,24 @@ pokud není na všech vstupech log. 1. Je to negovaný (opačný)
 výsledek logického součinu (AND). Je to nejpoužívanější log. člen.
 Matematický zápis: Y = /(A * B)
 
+ A | B | Y
+--- | --- | ---
+0 | 0 | 1
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 0
+
 ### OR
 Logický součet – má na výstupu log. 1 pouze tehdy, 
 pokud je alespoň na jednom vstupu log. 1.
 Matematický zápis: Y = A + B
+
+ A | B | Y
+--- | --- | ---
+0 | 0 | 0
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 1
 
 ### NOR
 Negovaný logický součet – má na výstupu log. 1 pouze tehdy, 
@@ -127,10 +165,24 @@ pokud je na všech vstupech log. 0. Je to negovaný (opačný)
 výsledek logického součtu (OR).
 Matematický zápis: Y = /(A + B)
 
+ A | B | Y
+--- | --- | ---
+0 | 0 | 1
+0 | 1 | 0
+1 | 0 | 0
+1 | 1 | 0
+
 ### XOR
 Exklusivní logický součet – má na výstupu log. 1 pouze tehdy, 
 pokud je na vstupech rozdílná log. hodnota.
 Matematický zápis: Y = /(A B)
+
+ A | B | Y
+--- | --- | ---
+0 | 0 | 0
+0 | 1 | 1
+1 | 0 | 1
+1 | 1 | 0
 
 ### NOT 
 Logická negace (invertor) – na výstupu je vždy opačná logická 
@@ -140,6 +192,7 @@ Matematický zápis: Y = /A
 ### YES (repeater)
 Opakovač – na výstupu je vždy stejná logická hodnota jako na vstupu.
 Matematický zápis: Y = A
+
 
 ## Logické úrovně
 
@@ -181,7 +234,7 @@ informace reprezentována a zpracovávána v podobě diskrétní
 - komparátory
 - obvody pro aritmetické operace (sčítačky, generátory přenosu apod.
 
-## Přehled kódů používaných v čislovobé technice
+## Přehled kódů používaných v čislicové technice
 ** Nemůžu najít informace -> Grayův kód **
 
 ## Pull-up/pull-down na vstupech čislicových obvodů
@@ -204,3 +257,10 @@ se vypočítá dle vzorce na obrázku. Odpor [Ohm] je roven celkovému napětí
 stačí použít odpor s vyšší hodnotou. To nejčastěji využijete u bílé a možná modré LED diody, 
 jejichž svítivost je skutečně vysoká. Pokud neznáte parametry diody, kterou máte zrovna po ruce, 
 nemělo by vadit ani použití nějakého odporu v rozmezí +/- 330R až 1k5 a u bílé klidně i 10k.
+
+
+```
+Autor: Jasim Sabry
+Merger: Sádlík Kryštof
+Datum: 10.5.2020
+```

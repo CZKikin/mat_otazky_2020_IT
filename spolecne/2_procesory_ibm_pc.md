@@ -2,23 +2,99 @@
 
 ## Charakteristika a parametry procesorů IBM-PC kompatibilní
 
-### i286
+### i8086
+- první v r. 1969 od Intelu - Intel 4004 - 4bit s fr. 108 KHz
+- v r. 1977
+- první 16bit proc.
+- zpětně kompatibilní s i8080
+- první s architekturou x86
+- 16b vnitřní architektura
+- 16b datová sběrnice
+- 20b adresní sběrnice
+- umí adresovat až 2^20 (1MiB) operační paměti
 
-1982, A-Bus -24b, D-Bus – 16b, Frekvence – 6 – 25Mhz, První setup BIOS
+#### Adresovaní v reálném modu
+- skladá se ze dvou 16b složek - segment, offset
+```
+segment	A 8 F 3 0 	- 16 - proto se posune
+offset    2 4 5 E
+  	    A B 3 8 E => zápis - segment:offset => A8F3:245E
+
+	- vznikne výsledná fyzická 20b adresa -> segment x 16 + offset
+```
+
+### i286
+- Frekvence 6 – 25Mhz 
+- První setup BIOS
+- v r. 1981
+- 130 000 tranzistorů
+- 16b procesor 16b datovou a 24b adresní sběrnicí
+- umožňuje práci ve dvou režimech
+- realný režim
+  - plně kompatibilní s procesorem 8086
+  - 20b adresa (může adresovat 1MiB operační paměti)
+  - tvoří se stejně jako u 8086
+
+- chraněný režim
+  - nový režim, nekompatibilní s 8086
+  - adresa se tvoří ze dvou 16b složek (selektor a offset) za pomoci tabulek 
+  - vysledná adresa je 24b (16MiB ram)
 
 ### i386
 
-1983, A-Bus 32b, D-Bus 32b, Frekvence 16-40 Mhz, 1. Multitasking, 1. Použítí cahce na zákl. Desce
+- 1983
+- Frekvence 16-40 Mhz
+- první Multitasking
+- první Použítí cahce na zákl. Desce
+- prvni 32b procesor
+- 32b datová a 32 adresní sběrnice
+- 275 000 tranzistorů
+- umí 3 režimy
+- reálný - stejný jako 8086
+- chraněný režim
+  - výsledná adresa je 32b (4GiB op. pam.)
+  - adresa se tvoří ze selektoru a offsetu
+  - je rozšířeny o strankovaní - převádí to lineární adresu ve vzdálené paměti na fyzickou adresu
+- virtuální režim
+  - funguje podobně jako 8086
+  - možnost virtualní paměti 1MB, může uložit kdekoli do 4GiB adresního prostoru
+
 
 ### i486
 
-Prakticky i80386, ale s FPU
+**Prakticky i80386, ale s FPU**
+- optimalizovaná 386 s interní cache a numerický koprocesor 80387
+- 32bitovy procesor, 32bit adresní sběrnice, 32bit datová sběrnice
+- 1,25 milionů tranzistorů
+- spálená historie -> 80487 - že vyráběly z plnohodnotných CPU mat. koprocesory tím, že v nich něco spálili
+- byli i procesory 80486 dx2 a dx4
+
 
 ### Intel Pentium
 
-1991, D-Bus – 64b, A-Bus – 32b, Frekvence 60 – 200Mhz + 16 KiB
+1991, D-Bus – 64b, A-Bus – 32b, Frekvence 60 – 200Mhz
 
 Má dvě větve ALU – výkon má tedy 2x větší, ale na stejné frekvenci
+- Pentium
+- 3,1 milionů tranzistorů
+- rok 1993
+- napájecí napětí -> 3,3V
+- 32bit procesor, 64bit datová sběrnice, 32bit adresní sběrnice
+- 1 superskalární procesor -> 10x - během 1 taktu udělá 2 instrukce naraz
+- obsahuje 16KiB cache paměti
+- rozdělená na:
+  - 8 KiB na data
+  - 8 KiB na insturkce
+
+### Pentium Pro
+- pro servery, výkonné pracovní stanice
+- rok 1995
+
+##### Pentium MMX
+- rozšířeni instrukcní sady
+- pro multimediální výpočty
+- rok 1997
+- technologie SIMD
 
 ### AMD K5
 
@@ -28,23 +104,49 @@ zpracovává více jednotkami
 ### Pentium 2
 
 1997, PAE – Page address extension, f = 233 – 500 Mhz, A – Bus = 32 b +4 PAE, D-Bus = 64b
-
 Cache již v pouzdru CPU L1 i L2, L1 u jádra (stejná frekvence), L2 mimo (½ frekvence)
+
+- odlehčená verze - Celeron - bez L2 cache, pase 128Kib L2 cache
 
 ### Pentium 3
 
 1999, f = až 1.4 Ghz, D – bus = 64b, A -bus = 32 + 4
+- rozšíření instrukční sady SSE
+```
+- ID na internetoch - každý procesor měl jedinečné ID a byl dohledatelný, 
+byla kolem toho nějaká aféra podle Pilčíka **Merge comment: FACT CHECK NEEDED**
+```
 
 ### Pentium 4
 
 2001, HyperThreading – rychlé přepínání mezi dvěmi sadami registrů, frekvence až 3.6GHz,
-
 d-bus - 64b, a-bus – 32 +4 b
+- SSE2
 
 ### Intel CORE
 
 2006+, D-bus i A - bus 64b, frekvence až 4-5 GHz
 
+- Core 2
+  - duo - 2 jádra
+  - quad - 4 jádra
+  - menší taktovací frekvence
+
+Core i
+  - 64bit, více jádrové
+  - i3 - 2 jádra, hyperthreading
+  - i5 - 4 jádra
+  - i7 - 4 jádra, hyperthreading
+  - variabilní taktovaní jader
+ 
+### AMD
+- 386 - napájení 3,6V, pro notebooky
+- 486
+- K5 - proti Pentiu, vydaný se zpožděním, pomalý v FPU operacích, neuspěšný
+- K6 - AMD koupilo firmu Next Gen která ho vyvinula, vykonný procesor
+- K6-2 - rozšíření 3D Now!
+- K7 - nová architektura, 3 FPU, prodávaný jako Athlon
+- K8 - AMD Hammer / Athlon 64 / Opheron - pro servery
 
 ## Paměťový prostor, cache, módy činnosti
 
@@ -133,8 +235,6 @@ Adresa je v režimu reálných adres určena dvěma registry: segmentovým a off
 je vypočítána jako součet hodnoty v segmentovém registru vynásobené 16 (tedy posunuté o 4 bity
 doleva) a hodnoty v offsetovém registru.
 
-_Související informace naleznete také v článku High memory area._
-
 Díky přenosu tak může být výsledkem až 21bitové číslo: šestnáctkově 0xFFFF0 + 0xFFFF =
 0x10FFEF. Pro 21. bit bylo do standardu IBM PC zavedeno rozšíření, které umožňovalo 21. adresní bit
 aktivovat řadičem klávesnice. Na procesorech Intel 80286 a novějších, které měly širší adresní sběrnici,
@@ -167,9 +267,12 @@ Původně přerušení sloužilo k obsluze hardwarových zařízení, které tak
 odtud označení vnější přerušení). Později byla přidána vnitřní přerušení, která vyvolává sám procesor,
 který tak oznamuje chyby vzniklé při provádění strojových instrukcí a synchronní softwarová přerušení
 
-
 vyvolávaná speciální strojovou instrukcí, která se obvykle používají pro vyvolání služeb operačního
 systému.
+
+- proces s vyšši prioritou si vyžádá přerušení, procesor nechá toho, co zrovna dělá a věnuje se prioritnímu procesu, jak ho dodělá, věnuje se tomu, který dělal předtím
+- žádá se o čas procesoru
+- generuje se IRQ (Interupt ReQuest) hardwarem počítače - generuje ho zařízení na sběrnici
 
 
 ### DMA – Přímý přítup do paměti
@@ -210,6 +313,17 @@ Jedná se o následující stupně:
 3.Execute – provedení instrukce
 4.Access – čtení z paměti
 5.Writeback – zápis výsledku do paměti
+
+> 0) programový vstup pro zpracovaní
+> 1) radic žádá vstupní zařízení o hodnoty
+> 2) vstupni zarizeni prenese hodnoty do operacni pameti
+> 3) řadič je informován o načtení dat
+> 4) řadič žádá o přenos dat (instrukce) do ALU nebo do výstupního zařízení
+> 5) odeslání dat z paměti do ALU nebo do výstupního zařízení
+> 6) žádost o provedení instrukce v ALU nebo ve výstupním zařízení
+> 7) uložení výsledku operace do operační paměti
+> 8) ALU informuje řadič o doručení instrukce
+> 9) předání výsledku výpočtu
 
 ### Zřetězené
 
@@ -255,22 +369,37 @@ procesoru zatížena prací.
 ## Jednotky Procesoru
 
 ALU, FPU, Řadič – zajišťuje součinnost jednotlivých součástí procesoru , Vektorová jednotka –
-matematický koprocesor
+matematický koprocesor, registry
 
 ## HyperThreading
 
-**Hyper-threading (oficiálně Hyper-Threading Technology, též HT Technology, HTT, HT) je v
+Hyper-threading (oficiálně Hyper-Threading Technology, též HT Technology, HTT, HT) je v
 informatice technologie používaná výrobcem procesorů Intel pro zjednodušené zajištění
 vícevláknového paralelního zpracování strojových instrukcí. Technologie vytváří z jednoho
 fyzického procesoru dva virtuální procesory tím, že jsou v něm aktivovány dvě řídicí jednotky.
 Vůči softwaru systém představuje místo jednoho fyzického dva (logické) procesory. Hyper-
 threading umožňuje lépe využít hardware procesoru, snížit odezvu systému (latenci), zrychlit
 výpočty (systém s aktivovaným hyper-threadingem je podle typu výpočtů zhruba stejně rychlý
-nebo až o třetinu rychlejší).**
+nebo až o třetinu rychlejší).
 
 Rychle přepíná mezi dvěma sadami registrů.
 
 ## Možnosti zvětšování výkonu procesoru
 
-Pipelining, HyperThreading, Superskalarita – některé jednotky jsou v procesoru víckrát, Přetaktování,
-Rozšíření šířky slova – 32bit, 64bit, více jader, zefektivnění mikrokódu
+- HyperThreading
+- Superskalarita – některé jednotky jsou v procesoru víckrát
+- Přetaktování,
+- Rozšíření šířky slova – 32bit, 64bit
+- zefektivnění mikrokódu
+- Predigce skoků – jakési předvídání skoků. Základem je myšlenka, že skoky jsou většinou 	ve smyčkách a reagují na nějakou podmínku, která 10x vyjde a 1x nevyjde.
+- pipelining - zpracování 2 instrukcí najednou
+- přidání víc jader
+  - na určité operace jsou vyhrazené a duplikované specializované části procesoru - FPU, ALU
+  - instrukce nejdou zpracovávat paralelně - musí se počkat na dokončení rozpracované instrukce
+- velikost procesorové cache - propojuje procesor s RAMkama
+
+```
+Autor: Jiří Jungwirth
+Merger: Sádlík Kryštof
+Datum: 7.5.2020
+```
