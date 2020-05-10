@@ -257,3 +257,10 @@ se vypočítá dle vzorce na obrázku. Odpor [Ohm] je roven celkovému napětí
 stačí použít odpor s vyšší hodnotou. To nejčastěji využijete u bílé a možná modré LED diody, 
 jejichž svítivost je skutečně vysoká. Pokud neznáte parametry diody, kterou máte zrovna po ruce, 
 nemělo by vadit ani použití nějakého odporu v rozmezí +/- 330R až 1k5 a u bílé klidně i 10k.
+
+
+```
+Autor: Jasim Sabry
+Merger: Sádlík Kryštof
+Datum: 10.5.2020
+```
