@@ -2,7 +2,7 @@
 
 *ALL HEIL IT4*
 
-- [x] 1
+- [x] 1 + poznámky
 - [x] 2 
 - [x] 3 
 - [x] 4 
