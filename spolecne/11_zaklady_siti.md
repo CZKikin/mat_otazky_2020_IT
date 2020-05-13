@@ -121,3 +121,9 @@ adresy v daném rozsahu. Rozdělení na podsítě sníží celkovou zátěž s�
 Ale také dá administrátorovi možnost lepšího zabezpečení, protože může říci které 
 podsítě mohou navzájem komunikovat. Administrátoři také mohou seskupit zařízení 
 do podsítě například podle patra budovy na kterém se nachází.
+
+```
+Autor: Tomáš Mrázek
+Merger: Sádlík Kryštof
+Datum: 10.5.2020
+```
