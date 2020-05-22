@@ -13,7 +13,7 @@
 - [x] 9
 - [x] 10
 - [x] 11 + pozn
-- [ ] 12 (WIP)
+- [x] 12 
 - [x] 13
 - [x] 14 + poznámky
 - [ ] 15S (Kryštof: Jen anglicky)

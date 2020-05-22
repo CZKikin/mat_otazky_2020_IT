@@ -164,3 +164,60 @@ používají Diffie-Hellman.
 
 `Eliptická křivka kryptografie (ECC)` - používá eliptické křivky jako součást algoritmu. 
 V USA používá Národní bezpečnostní agentura ECC pro generování digitálního podpisu a výměnu klíčů.
+
+## Firewall
+Firewall je síťové zařízení, které slouží k řízení a zabezpečování síťového provozu mezi sítěmi s různou úrovní důvěryhodnosti a zabezpečení. 
+Zjednodušeně se dá říct, že slouží jako kontrolní bod, který definuje pravidla pro komunikaci mezi sítěmi, které od sebe odděluje. 
+Tato pravidla historicky vždy zahrnovala identifikaci zdroje a cíle dat (zdrojovou a cílovou IP adresu) a zdrojový a cílový port, 
+což je však pro dnešní firewally už poměrně nedostatečné – modernější firewally se opírají přinejmenším o informace o stavu spojení, 
+znalost kontrolovaných protokolů a případně prvky IDS. Firewally se během svého vývoje řadily zhruba do následujících kategorií:
+
+- Paketové filtry
+- Aplikační brány
+- Stavové paketové filtry
+- Stavové paketové filtry s kontrolou známých protokolů a popř. kombinované s IDS
+
+## Intrution detection/prevention system
+
+`Systémy detekce narušení (IDS)` pasivně monitorují provoz v síti. Obrázek ukazuje, že zařízení podporující IDS kopíruje tok provozu a analyzuje 
+zkopírovaný provoz spíše než skutečné předávané pakety. Při práci offline porovnává zachycený tok dat se známými škodlivými podpisy, 
+podobně jako software, který kontroluje přítomnost virů. Práce offline znamená několik věcí:
+
+IDS pracuje pasivně.
+- Zařízení IDS je fyzicky umístěno v síti, takže pro dosažení tohoto cíle musí být přenos zrcadlen
+- Síťový provoz neprochází IDS, pokud není zrcadlený
+- Pasivní znamená, že IDS monitoruje a podává zprávy o provozu. Neprovádí žádné kroky. Toto je definice provozu v promiskuitním režimu.
+
+Výhodou práce s kopií provozu je to, že IDS nemá negativní vliv na tok paketů předávaného provozu. 
+Nevýhodou provozu na kopii provozu je to, že IDS nemůže zastavit škodlivé útoky jednoho paketu v dosažení cíle před tím, než na útok reaguje. IDS často vyžaduje pomoc jiných síťových zařízení, jako jsou směrovače a brány firewall, aby reagovala na útok.
+
+Lepším řešením je použití zařízení, které dokáže okamžitě detekovat a zastavit útok. Tuto funkci provádí systém prevence narušení (IPS).
+
+`IPS` staví na technologii IDS. Zařízení IPS však pracuje v inline režimu. To znamená, že veškerý příchozí a odchozí provoz musí přes něj protékat ke zpracování. 
+Jak je znázorněno na obrázku, IPS neumožňuje paketům vstoupit na důvěryhodnou stranu sítě, ledaže by pakety analyzoval. Může detekovat a okamžitě řešit problém se sítí.
+
+IPS monitoruje síťový provoz. Analyzuje obsah a užitečné zatížení paketů pro sofistikovanější vložené útoky, které mohou zahrnovat škodlivá data. 
+Některé systémy používají směs detekčních technologií, včetně detekce narušení založeného na signaturách, profilech a analýze protokolů. 
+Tato hlubší analýza umožňuje IPS identifikovat, zastavit a blokovat útoky, které by procházely tradičním zařízením brány firewall. 
+Když paket přijde přes rozhraní na IPS, odchozí nebo důvěryhodné rozhraní neobdrží tento paket, dokud IPS analyzuje paket.
+
+Výhodou práce v inline módu je, že IPS může zabránit útokům jednoho paketu v dosažení cílového systému. 
+Nevýhodou je, že špatně nakonfigurovaná IPS může negativně ovlivnit tok paketů přesměrovaného provozu.
+
+Největší rozdíl mezi IDS a IPS spočívá v tom, že IPS reaguje okamžitě a neumožňuje průchod škodlivého přenosu, 
+zatímco IDS umožňuje průchod škodlivého přenosu před vyřešením problému.
+
+
+## Antivir, antimalware, anti-rootkit
+Antivirový program - Většina antivirových sad zachycuje nejrozšířenější formy malwaru. Počítačoví zločinci však denně vyvíjejí a zavádějí nové hrozby. 
+Klíčem k efektivnímu antivirovému řešení je proto udržování aktualizovaných podpisů. 
+Podpis je jako otisk prstu. Identifikuje vlastnosti části škodlivého kódu.
+Antivirové programy dokáží odhalit rootkity i programy, které mají podobné chování. 
+Většina programů antivirových programů dokáže deaktivovat nalezené rootkity. 
+Mazání samotných rootkitů musí být ale obvykle provedeno ručně.
+
+
+```
+Autor: Sádlík Kryštof
+Datum: 13.5.2020
+```
