@@ -129,13 +129,12 @@ Chcete-li dešifrovat tento šifrový text, použijte reverzní transformaci na 
 Blokové šifry obvykle vedou k výstupním datům, která jsou větší než vstupní data, protože ciphertext musí být násobkem velikosti bloku. 
 Například Data Encryption Standard (DES) je symetrický algoritmus, který šifruje bloky v 64bitových blocích pomocí 56bitového klíče. 
 Aby se toho dosáhlo, algoritmus bloku vezme data po jednom kusu najednou, například 8 bajtů na kus, dokud není celý blok plný. 
-Pokud je méně vstupních dat než jeden celý blok, přidává algoritmus umělá data nebo mezery, dokud nepoužívá celých 64 bitů, 
-jak je znázorněno na obrázku 1 pro 64 bitů vlevo.
+Pokud je méně vstupních dat než jeden celý blok, přidává algoritmus umělá data nebo mezery, dokud nepoužívá celých 64 bitů.
 
 #### Streamovací šifry
 
-Na rozdíl od blokových šifrů šifrují proudové šifry najednou jeden bajt nebo jeden bit najednou, 
-jak je znázorněno na obrázku 2. Představte si šifry proudu jako blokovou šifru s velikostí bloku jednoho bitu. 
+Na rozdíl od blokových šifrů šifrují proudové šifry najednou jeden bajt nebo jeden bit najednou. 
+Představte si šifry proudu jako blokovou šifru s velikostí bloku jednoho bitu. 
 U proudové šifry se transformace těchto menších jednotek prostého textu liší v závislosti na tom, 
 kdy se s nimi během šifrovacího procesu setká. Streamovací šifry mohou být mnohem rychlejší než blokové šifry a obvykle 
 nezvýší velikost zprávy, protože mohou zašifrovat libovolný počet bitů.
@@ -179,7 +178,7 @@ znalost kontrolovaných protokolů a případně prvky IDS. Firewally se během 
 
 ## Intrution detection/prevention system
 
-`Systémy detekce narušení (IDS)` pasivně monitorují provoz v síti. Obrázek ukazuje, že zařízení podporující IDS kopíruje tok provozu a analyzuje 
+`Systémy detekce narušení (IDS)` pasivně monitorují provoz v síti. Zařízení podporující IDS kopíruje tok provozu a analyzuje 
 zkopírovaný provoz spíše než skutečné předávané pakety. Při práci offline porovnává zachycený tok dat se známými škodlivými podpisy, 
 podobně jako software, který kontroluje přítomnost virů. Práce offline znamená několik věcí:
 
@@ -194,7 +193,7 @@ Nevýhodou provozu na kopii provozu je to, že IDS nemůže zastavit škodlivé 
 Lepším řešením je použití zařízení, které dokáže okamžitě detekovat a zastavit útok. Tuto funkci provádí systém prevence narušení (IPS).
 
 `IPS` staví na technologii IDS. Zařízení IPS však pracuje v inline režimu. To znamená, že veškerý příchozí a odchozí provoz musí přes něj protékat ke zpracování. 
-Jak je znázorněno na obrázku, IPS neumožňuje paketům vstoupit na důvěryhodnou stranu sítě, ledaže by pakety analyzoval. Může detekovat a okamžitě řešit problém se sítí.
+IPS neumožňuje paketům vstoupit na důvěryhodnou stranu sítě, ledaže by pakety analyzoval. Může detekovat a okamžitě řešit problém se sítí.
 
 IPS monitoruje síťový provoz. Analyzuje obsah a užitečné zatížení paketů pro sofistikovanější vložené útoky, které mohou zahrnovat škodlivá data. 
 Některé systémy používají směs detekčních technologií, včetně detekce narušení založeného na signaturách, profilech a analýze protokolů. 
