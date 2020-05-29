@@ -178,3 +178,9 @@ Názvy signálů vždy začínají řetězcem „SIG“ (jako signál), takže c
 19|STOP|Zastaví proces. Nelze obejít.
 20|TSTP(Terminal stop)|Zastaví proces, ale lze obejít. Tento signál proces obdrží, když běží interaktivně v shellu a uživatel stiskne Ctrl+Z.
 18|CONT(Continue)|Obnoví běh procesu po obdržení některého ze dvou předchozích signálů.
+
+```
+Autor: Svatava Malatinská
+Merger: Sádlík Kryštof
+Datum: 29.5.2020
+```
