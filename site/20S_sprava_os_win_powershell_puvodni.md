@@ -37,12 +37,12 @@ mi vypiš detailnì jeho vlastnosti
 ```
 ## Promìnné
 
-```
+```powershell
 - PS C:\Windows\System32> $promenna = 123
 - PS C:\Windows\System32> $promenna
 > 123
 ```
-```
+```powershell
 - $promenna2 = Get-Process Calculator
 - $promenna
 - $promenna2.\*TAB\* - vypíše po jednom vlastnosti promìnné
@@ -70,7 +70,7 @@ nstat pøi pøidávání vlastností k objektu založeného na tøídì Objekt.
 K vytvoøení objektu založeného na PSObjektu potøebujete použít *New-Object* s *–TypeName*
 parametrem, abyste specifikovali typ/tøídu objektu.
 
-```
+```powershell
 $system = New-Object -TypeName PSObject
 Když spustíte tento pøíkaz, vygeneruje to PSCustomObject a zapíše se do promìnné $system
 ```
@@ -90,13 +90,13 @@ nastavili nebo importovali, a aliasy, které jste pøidali do svého profilu PowerS
 Ve výchozím nastavení **_Get-Alias_** alias a vrací název pøíkazu. Pøi použití parametru Definice získá
 Get-Alias název pøíkazu a vrací jeho aliasy.
 
-```
+```powershell
 ? Get-Alias
 [[-Name] <String[]>]
 [-Exclude <String[]>]
 ```
 
-```
+```powershell
 [-Scope <String>]
 [<CommonParameters>]
 ? Get-Alias
@@ -140,10 +140,10 @@ popis zabezpeèení chcete zmìnit. Potom pomocí parametrù **_AclObject_** nebo **_
 zadejte popis zabezpeèení, které mají hodnoty, které chcete použít. **_Set-Acl_** použije použití popis
 zabezpeèení.
 
-```
+```powershell
 Set-Acl
 ```
-```
+```powershell
 ? [-Path] <String[]>
 ? [-InputObject] <PSObject>
 ? [-AclObject] <Object>
@@ -152,7 +152,7 @@ Set-Acl
 ? [-Filter <String>]
 ```
 
-```
+```powershell
 ? [-Include <String[]>]
 ? [-Exclude <String[]>]
 ? [-WhatIf]
