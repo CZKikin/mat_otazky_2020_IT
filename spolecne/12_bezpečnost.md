@@ -1,4 +1,4 @@
-# Bespečnost v síťové infrastruktuře
+# Bezpečnost v síťové infrastruktuře
 
 ### Co je potřeba?
 Pro nastavení ssh je potřeba:
