@@ -161,9 +161,9 @@ Set-Acl
 ```
 - Pøístup k WMI (cmdlet pro wmi, získání informací), Získávání informací o
 
-### objektech
+## Objektech
 
-```
+```poweershell
 Get-CimInstance -ClassName Win32_Desktop - Tato funkce vrátí informace pro všechny
 pracovní plochy, a u jsou pouívány.
 Get-CimInstance -ClassName Win32_BIOS - Tøída WMI Win32_BIOS vrátí pomìrnì
