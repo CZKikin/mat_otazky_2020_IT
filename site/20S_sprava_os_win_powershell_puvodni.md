@@ -163,11 +163,9 @@ Set-Acl
 
 ## Objektech
 
-```poweershell
-Get-CimInstance -ClassName Win32_Desktop - Tato funkce vrátí informace pro všechny
-pracovní plochy, a u jsou pouívány.
-Get-CimInstance -ClassName Win32_BIOS - Tøída WMI Win32_BIOS vrátí pomìrnì
-kompaktní a úplné informace o systému BIOS v místním poèítaèi
+```powershell
+Get-CimInstance -ClassName Win32_Desktop #Tato funkce vrátí informace pro všechny pracovní plochy, a u jsou pouívány.
+Get-CimInstance -ClassName Win32_BIOS #Tøída WMI Win32_BIOS vrátí pomìrnì kompaktní a úplné informace o systému BIOS v místním poèítaèi.
 Get-CimInstance -ClassName Win32_Processor | Select-Object -ExcludeProperty "CIM*"
 ```
 - Obecné informace o procesoru mùete naèíst pomocí Win32_Processor tøídy WMI, i
