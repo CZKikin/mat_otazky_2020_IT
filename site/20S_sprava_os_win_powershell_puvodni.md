@@ -144,20 +144,20 @@ zabezpeèení.
 Set-Acl
 ```
 ```powershell
-? [-Path] <String[]>
-? [-InputObject] <PSObject>
-? [-AclObject] <Object>
-? [-ClearCentralAccessPolicy]
-? [-Passthru]
-? [-Filter <String>]
+[-Path] <String[]>
+[-InputObject] <PSObject>
+[-AclObject] <Object>
+[-ClearCentralAccessPolicy]
+[-Passthru]
+[-Filter <String>]
 ```
 
 ```powershell
-? [-Include <String[]>]
-? [-Exclude <String[]>]
-? [-WhatIf]
-? [-Confirm]
-? [<CommonParameters>]
+[-Include <String[]>]
+[-Exclude <String[]>]
+[-WhatIf]
+[-Confirm]
+[<CommonParameters>]
 ```
 - Pøístup k WMI (cmdlet pro wmi, získání informací), Získávání informací o
 
@@ -172,11 +172,11 @@ kompaktní a úplné informace o systému BIOS v místním poèítaèi
 ```
 - Obecné informace o procesoru mùžete naèíst pomocí Win32_Processor tøídy WMI, i
 když budete pravdìpodobnì chtít tyto informace filtrovat
-? **Get-CimInstance -ClassName Win32_ComputerSystem -** Výpis výrobce a modelu poèítaèe
-? **Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object -Property *user*
+- **Get-CimInstance -ClassName Win32_ComputerSystem -** Výpis výrobce a modelu poèítaèe
+- **Get-CimInstance -ClassName Win32_OperatingSystem | Select-Object -Property *user*
 -** Výpis místních uživatelù a vlastníkù
-? **Get-CimInstance -ClassName Win32_LocalTime** - Získání místního èasu z poèítaèe
-? **Get-CimInstance -ClassName Win32_Service | Select-Object -Property
+- **Get-CimInstance -ClassName Win32_LocalTime** - Získání místního èasu z poèítaèe
+- **Get-CimInstance -ClassName Win32_Service | Select-Object -Property
 Status,Name,DisplayName -** Pokud chcete zobrazit stav všech služeb v urèitém poèítaèi,
 mùžete použít Get-Service rutinu místnì. Pro vzdálené systémy mùžete použít
 Win32_Service tøídy WMI. Pokud použijete Select-Object k filtrování výsledkù na stav,
@@ -184,10 +184,10 @@ názeva Zobrazovanýnázev, bude výstupní formát témìø totožný s tímto formátem Get
 Service
 - Clipboard (schránkou – ctrl + c/v)
 
-**?** **_Set-Clipboard -Value "Tohle je pokus"_** **-** vloží tento text do schránky a když pak nìkde
+- **_Set-Clipboard -Value "Tohle je pokus"_** **-** vloží tento text do schránky a když pak nìkde
 zmáènete ctrl+v tak se vloží “Tohle je pokus”
-**?** **_Get-Date | Set-Clipboard_** **-** “05/22/2019 23:07:21”
-**?** **_Get-Date |Out-String | Set-Clipboard_** - "støeda 22. kvìtna 2019 23:07:54”
+- **_Get-Date | Set-Clipboard_** **-** “05/22/2019 23:07:21”
+- **_Get-Date |Out-String | Set-Clipboard_** - "støeda 22. kvìtna 2019 23:07:54”
 
 
 
