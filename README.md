@@ -18,10 +18,10 @@
 - [x] 14 + poznámky
 - [x] 15S
 - [x] 16S
-- [ ] 17S (WIP)
+- [ ] 17S Skoro hotová
 - [ ] 18S (WIP)
 - [ ] 19S (WIP)
-- [ ] 20S (WIP)
+- [x] 20S
 - [x] 21S
 - [x] 15P
 - [ ] 16P (WIP)
