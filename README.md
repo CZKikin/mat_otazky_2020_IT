@@ -1,6 +1,6 @@
 # Maturitní otázky pro IT v roce 2020
 
-*ALL HEIL IT4*
+*ALL HEIL IT4* - Pro další ročníky. Klidně si to forkujte, popř. když pošlete PR s úpravami. Hlavně to sdílejte s ostatními.
 
 - [x] 1 + poznámky
 - [x] 2 
